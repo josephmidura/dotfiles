@@ -1,0 +1,62 @@
+-----------------------------------
+-- last update 12/05/18
+-----------------------------------
+
+--\pset is for changing the output format
+--\set is for everything else
+
+-----------------------------------
+--------  Stuff that works --------
+-----------------------------------
+
+-- keep startup quiet
+\set QUIET 1
+
+-- Print date on startup
+\echo `date  +"%Y-%m-%d %H:%M:%S"`
+---
+
+-- Timing on
+\timing
+
+-- Color prompts are more fun
+\set PROMPT1 '%[%033[1;33;40m%]%n@%/%R%[%033[0m%]%# '
+
+-- Need a secondary and tertiary prompt
+\set PROMPT2 '... >'
+
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- make history ignore all lines entered that were preceded by spaces and
+-- ignore any entries that matched the previos line entered
+\set HISTCONTROL ignoreboth
+
+-- Keep a history of the last 2000 commands.
+\set HISTSIZE 2000
+
+-- Instead of displaying nulls as blank space, nulls as [NULL].
+-- distinguish nulls from empty strings
+\pset null '[NULL]'
+
+-- Turn this feature on
+\pset pager always
+
+-- Show lines around the outside of select results
+\pset border 2
+
+-- let psql format query output
+\x auto
+
+-- format all sql with uppercase
+\set COMP_KEYWORD_CASE upper
+
+
+\unset QUIET 
+
+
+-----------------------------------
+--------  Stuff to test  --------
+-----------------------------------
+
+
+
