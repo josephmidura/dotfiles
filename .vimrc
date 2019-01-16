@@ -36,13 +36,12 @@ set softtabstop			=4		" make one backspace go back X places
 set expandtab			        " Inserts space characters when tab pressed
                                 " Insert a real tab with CTRL_V <tab>
 
-"colorscheme desert				" muted, similar to elflord
+colorscheme desert				" muted, similar to elflord
 "colorscheme koehler			" brighter than desert, same colors, bold
 "colorscheme ron                 " similar to koehler, NOT BOLD
 "colorscheme slate				" also good
 "colorscheme delek 		
 "colorscheme elflord             " shows keywords well in python
-colorscheme murphy              "
 "colorscheme peachpuff           "
 "colorscheme zellner              "
 
