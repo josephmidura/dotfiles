@@ -1,8 +1,8 @@
 -----------------------------------
--- last update 12/05/18
+-- last update 02/07/19
 -----------------------------------
 
---\pset is for changing the output format
+--\pset is for changing the output format (null,
 --\set is for everything else
 
 -----------------------------------
@@ -55,7 +55,7 @@
 
 
 -----------------------------------
---------  Stuff to test  --------
+--------  Stuff to try out  -------
 -----------------------------------
 
 
