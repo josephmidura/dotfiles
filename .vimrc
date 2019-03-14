@@ -4,7 +4,7 @@
 " This makes vim work better.                                                "
 " It also makes bacon.                                                       "	
 "																			 "	
-" Last update 01/10/19														 "
+" Last update 03/14/19														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
@@ -61,23 +61,22 @@ autocmd BufReadPost *
     \ endif
 
 
-
-
 " make python easier
 set textwidth =79   
 set autoindent      " not sure if this works
 set fileformat=unix " stores file in unix format to avoid conversion issues
 
 
+" Don't have vim plugs now
 " Make vim-plug work
 " Specify a directory for plugins
 " Plugins will be downloaded under the specified directory.
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
 " shorthand notation for list of plugins
-Plug 'itchyny/lightline.vim'
-Plug 'airblade/vim-gitgutter'
+"Plug 'itchyny/lightline.vim'
+"Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system - plugins become visible to vim after this call
-call plug#end()
+"call plug#end()
 
