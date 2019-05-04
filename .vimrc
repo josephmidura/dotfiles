@@ -4,7 +4,7 @@
 " This makes vim work better.                                                "
 " It also makes bacon.                                                       "	
 "																			 "	
-" Last update 04/08/19														 "
+" Last update 05/04/19														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
@@ -77,3 +77,4 @@ Plug 'airblade/vim-gitgutter'
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
 
+" Add plugins for react and react native
