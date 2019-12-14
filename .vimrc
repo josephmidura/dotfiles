@@ -1,10 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" file created by me                     			        				 "
+" Make vim work better.                                                      "
 "																			 "	
-" This makes vim work better.                                                "
-" It also makes bacon.                                                       "	
-"																			 "	
-" Last update 05/13/19														 "
+" Last update 11/29/19														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
