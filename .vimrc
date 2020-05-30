@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
-"																			 "	
-" Last update 11/29/19														 "
+" See end of this file about lightline and other plugins					 "
+" Last update 04/11/20														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
@@ -33,12 +33,12 @@ set softtabstop			=4		" make one backspace go back X places
 set expandtab			        " Inserts space characters when tab pressed
                                 " Insert a real tab with CTRL_V <tab>
 
-colorscheme desert				" muted, similar to elflord
+"colorscheme desert				" muted, similar to elflord
 "colorscheme koehler			" brighter than desert, same colors, bold
 "colorscheme ron                 " similar to koehler, NOT BOLD
 "colorscheme slate				" also good
 "colorscheme delek 		
-"colorscheme elflord             " shows keywords well in python
+colorscheme elflord             " shows keywords well in python
 "colorscheme peachpuff           "
 "colorscheme zellner              "
 
@@ -65,13 +65,14 @@ set fileformat=unix " stores file in unix format to avoid conversion issues
 " Make vim-plug work
 " Specify a directory for plugins
 " Plugins will be downloaded under the specified directory.
+" UNCOMMENT THE NEXT LINE
 "call plug#begin('~/.vim/plugged')
 
 " shorthand notation for list of plugins
+" UNCOMMENT THE NEXT LINE
 "Plug 'itchyny/lightline.vim'
 "Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system - plugins become visible to vim after this call
 "call plug#end()
 
-" Add plugins for react and react native
