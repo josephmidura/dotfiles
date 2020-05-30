@@ -1,8 +1,4 @@
-# last update 12-08-19
-
-# determine whether this is the login script
-echo hello from bashrc
-# this loads after bash profile!!
+# last update 05-04-20
 
 # Source the aliases file
 if [ -f ~/.bash_aliases ]; then
@@ -21,7 +17,7 @@ fi
 
 # Set terminal colors
 
-# This is equivalent to ls -G. See man ls for details
+# This is equivalent to ls -G. See man ls for details because I alias this also
 export CLICOLOR=1
 
 #not sure what the next line does
@@ -32,7 +28,6 @@ export HISTCONTROL=ignoreboth:erasedups
 
 #https://www.tecmint.com/display-linux-command-history-with-date-and-time/
 export HISTTIMEFORMAT='%F %T'
-
 
 # Colorize man output
 export LESS_TERMCAP_mb=$'\e[1;35m'
