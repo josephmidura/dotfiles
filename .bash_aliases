@@ -1,6 +1,8 @@
-# last update 01-01-20
+# last update 10-l7-20
 
-echo Hello from bash_aliases. I load after .bashrc
+#echo Hello from bash_aliases. I load after .bashrc
+
+alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 
 # network aliases
 alias ping='ping -c 10'             # limit to 10 pings
@@ -24,6 +26,7 @@ alias pipshells='pipenv shell' 		# start a new shell: 'ps' is different
 alias pv='python --version'         # 
 
 # terminal aliases
+# -G colorizes, -h makes sizes human readable, -F puts / * @
 alias ls='ls -GF'                   # add colors -- see man ls
 alias la='ls -aF'                   # show all
 alias lx='ls -xF'                   # sort by extension type 

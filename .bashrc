@@ -1,4 +1,10 @@
-# last update 05-04-20
+# last update 10-17-20
+
+# determine whether this is the login script
+#echo Hello from .bashrc. I load after bash_profile
+
+# my prompt is here
+#https://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/
 
 # Source the aliases file
 if [ -f ~/.bash_aliases ]; then
@@ -14,6 +20,9 @@ then
 else
     PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 fi
+
+# from dave taylor:
+#PS1="\w \! \$ "
 
 # Set terminal colors
 
@@ -77,3 +86,7 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
  
 txtrst='\e[0m'    # Text Reset
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
