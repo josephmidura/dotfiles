@@ -1,7 +1,6 @@
-# last update 10-l7-20
+# last update 12-28-20
 
-#echo Hello from bash_aliases. I load after .bashrc
-
+# Some Mac Aliases
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 
 # network aliases
