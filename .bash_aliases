@@ -7,6 +7,11 @@ alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 alias ping='ping -c 10'             # limit to 10 pings
 alias speedtest='speedtest-cli'     # run speedtest
 
+# Some git aliases
+alias gitp='git push origin'
+alias gitc='git commit -m'
+alias gits='git status'
+
 # vim aliases
 alias v='vim'          			    # always use vim
 alias vi='vim'          			# always use vim
@@ -43,6 +48,3 @@ alias svim='source ~/.vimrc'		# source vimrc
 alias grep='grep --color'           # colorize grep results
 alias h='history'                   # duh
 
-# Some git aliases
-alias gitp='git push origin'
-alias gitc='git commit -m'
