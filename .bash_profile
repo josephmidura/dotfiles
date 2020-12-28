@@ -1,6 +1,4 @@
-# last update 10/17/20
-
-#echo Hello from bash profile. I load first
+# last update 12/28/20
 
 # Source the .bashrc
 if [ -f ~/.bashrc ]; then
@@ -13,5 +11,4 @@ export PATH="$HOME/bin:$PATH"
 # Set PATH for Python in homebrew
 export PATH="usr/local/opt/python@3.8/bin:$PATH" 
 
-# Run archey cause it's fun
-archey
+## sometimes it's fun to run archey (homebrew) here
