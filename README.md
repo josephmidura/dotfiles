@@ -1,2 +1,2 @@
 # dotfiles
-Setup a new environment in Catalina using bash
+Setup a new environment in mac using bash
