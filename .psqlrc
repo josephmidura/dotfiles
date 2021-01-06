@@ -1,12 +1,12 @@
 -----------------------------------
--- last update 02/07/19
+-- last update 01/05/21
 -----------------------------------
 
 --\pset is for changing the output format (null,
 --\set is for everything else
 
 -----------------------------------
---------  Stuff that works --------
+-------- Settings I like  ---------
 -----------------------------------
 
 -- keep startup quiet
@@ -50,13 +50,5 @@
 -- format all sql with uppercase
 \set COMP_KEYWORD_CASE upper
 
-
 \unset QUIET 
-
-
------------------------------------
---------  Stuff to try out  -------
------------------------------------
-
-
 
