@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
-" See end of this file about lightline and other plugins					 "
-" Last update 04/11/20														 "
+" Uncomment end of this file for lightline and other plugins                 "
+" Last update 01/15/21														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
@@ -35,12 +35,12 @@ set expandtab			        " Inserts space characters when tab pressed
 
 "colorscheme desert				" muted, similar to elflord
 "colorscheme koehler			" brighter than desert, same colors, bold
-"colorscheme ron                 " similar to koehler, NOT BOLD
+"colorscheme ron                " similar to koehler, NOT BOLD
 "colorscheme slate				" also good
 "colorscheme delek 		
 colorscheme elflord             " shows keywords well in python
-"colorscheme peachpuff           "
-"colorscheme zellner              "
+"colorscheme peachpuff          "
+"colorscheme zellner            "
 
 " scrolling
 set scrolloff			=3	" start scrolling when  lines away from margins
