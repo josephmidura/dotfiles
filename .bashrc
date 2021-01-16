@@ -1,27 +1,23 @@
-# last update 10-17-20
+# last update 01-16-21
 
 # determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
 
-# my prompt is here
-#https://osxdaily.com/2013/02/05/improve-terminal-appearance-mac-os-x/
 
 # Source the aliases file
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-# color prompt and make root red
+# color prompt and make root red (w vs W changes pwd options)
 if [ `id -u` = 0 ]
 then
     PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] "
-    #SUDO_PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] "
-    #PS1="\[\033[31m\]\h:\W \u\$\[\033[0m\] "
 else
     PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 fi
 
-# from dave taylor:
+# alternative prompt shows history command number + $
 #PS1="\w \! \$ "
 
 # Set terminal colors
