@@ -1,4 +1,4 @@
-# last update 12-28-20
+# last update 01-16-21
 
 # Some Mac Aliases
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
@@ -31,7 +31,7 @@ alias pv='python --version'         #
 
 # terminal aliases
 # -G colorizes, -h makes sizes human readable, -F puts / * @
-alias ls='ls -GF'                   # add colors -- see man ls
+alias ls='ls -GFh'                  # add colors,symbol,readability
 alias la='ls -aF'                   # show all
 alias lx='ls -xF'                   # sort by extension type 
 alias ll='ls -lF'                   # long list 
