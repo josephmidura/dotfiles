@@ -1,13 +1,13 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 " Uncomment end of this file for lightline and other plugins                 "
-" Last update 01/15/21														 "
+" Last update 01/21/21														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
 
 " Make it look nice
-set scrolloff			=3		" keep cursortwo lines away from top/bottom
+set scrolloff			=3		" keep cursor X lines away from top/bottom
 set laststatus			=2		" enable the status line
 set cmdheight			=2		" make the command line X lines high
 
@@ -38,7 +38,7 @@ set expandtab			        " Inserts space characters when tab pressed
 "colorscheme ron                " similar to koehler, NOT BOLD
 "colorscheme slate				" also good
 "colorscheme delek 		
-colorscheme elflord             " shows keywords well in python
+colorscheme elflord             " generally the best. Thanks S
 "colorscheme peachpuff          "
 "colorscheme zellner            "
 
@@ -57,7 +57,7 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-" make python easier
+" make python nicer 
 set textwidth =79   
 set autoindent      " not sure if this works
 set fileformat=unix " stores file in unix format to avoid conversion issues
