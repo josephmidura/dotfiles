@@ -1,8 +1,7 @@
-# last update 01-16-21
+# last update 01-23-21
 
 # determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
-
 
 # Source the aliases file
 if [ -f ~/.bash_aliases ]; then
