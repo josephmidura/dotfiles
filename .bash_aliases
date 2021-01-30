@@ -1,4 +1,4 @@
-# last update 01-16-21
+# last update 01-30-21
 
 # Some Mac Aliases
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
@@ -40,6 +40,8 @@ alias c='clear'
 alias ..='cd ..'		            # up one directory
 alias cd~='cd ~'		            # fix a common error
 alias rm='rm -i'                    # ask for permission 
+
+#### cp
 alias cp='cp -i'                    # ask for permission 
 alias mv='mv -i'                    # ask for permission 
 alias cat='cat -n'                  # line numbers in cat
