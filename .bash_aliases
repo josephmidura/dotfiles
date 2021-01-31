@@ -1,18 +1,18 @@
-# last update 01-30-21
+# Last update 01-31-21
 
-# Some Mac Aliases
+# Some Macbook aliases
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 
-# network aliases
+# Network aliases
 alias ping='ping -c 10'             # limit to 10 pings
 alias speedtest='speedtest-cli'     # run speedtest
 
-# Some git aliases
+# Git aliases
 alias gitp='git push origin'
 alias gitc='git commit -m'
 alias gits='git status'
 
-# vim aliases
+# Vim aliases
 alias v='vim'          			    # always use vim
 alias vi='vim'          			# always use vim
 alias vvim='vim ~/.vimrc'			# open vimrc
@@ -23,13 +23,13 @@ alias vlog='vim ~/.bash_logout'     # open bash logout
 alias vsql='vim ~/.psqlrc'          # open psqlrc
 alias vinput='vim ~/.inputrc'       # open inputrc
 
-# python aliases
+# Python aliases
 alias python='python3'			    # always use python3
 alias jn='jupyter notebook'			# start jupyter notebook
 alias pipshells='pipenv shell' 		# start a new shell: 'ps' is different
 alias pv='python --version'         # 
 
-# terminal aliases
+# Terminal aliases
 # -G colorizes, -h makes sizes human readable, -F puts / * @
 alias ls='ls -GFh'                  # add colors,symbol,readability
 alias la='ls -aF'                   # show all
@@ -50,3 +50,5 @@ alias svim='source ~/.vimrc'		# source vimrc
 alias grep='grep --color'           # colorize grep results
 alias h='history'                   # duh
 
+# Navigation Shortcuts
+alias cj='cd ~/workshop/cs312
