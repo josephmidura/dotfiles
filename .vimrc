@@ -1,13 +1,13 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 " Uncomment end of this file for lightline and other plugins                 "
-" Last update 01/21/21														 "
+" Last update 01/31/21														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" use vim rather than vi settings
 
 " Make it look nice
-set scrolloff			=3		" keep cursor X lines away from top/bottom
+set scrolloff			=3		" keep cursortwo lines away from top/bottom
 set laststatus			=2		" enable the status line
 set cmdheight			=2		" make the command line X lines high
 
@@ -24,9 +24,9 @@ set visualbell					" no sounds
 " Set the window size
 set lines				=30		" set height
 set columns				=85 	" set width
-set numberwidth			=4		" add extra space by numbers
+set numberwidth			=4		" add extra space by number line
 
-" Setup  my tabs
+" Setup my tabs
 set shiftwidth			=4		" make the following tab stop every X places
 set tabstop				=4		" use X spaces for tab
 set softtabstop			=4		" make one backspace go back X places 
@@ -39,7 +39,7 @@ set expandtab			        " Inserts space characters when tab pressed
 "colorscheme slate				" also good
 "colorscheme delek 		
 colorscheme elflord             " generally the best. Thanks S
-"colorscheme peachpuff          "
+"colorscheme peachpuff          " good for dark rooms
 "colorscheme zellner            "
 
 " scrolling
@@ -57,9 +57,9 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-" make python nicer 
+" make python nicer
 set textwidth =79   
-set autoindent      " not sure if this works
+set autoindent      " not sure if this works correctly
 set fileformat=unix " stores file in unix format to avoid conversion issues
 
 " Make vim-plug work
