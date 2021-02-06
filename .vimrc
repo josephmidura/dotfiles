@@ -1,51 +1,51 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 " Uncomment end of this file for lightline and other plugins                 "
-" Last update 01/31/21														 "
+" Last update 02/05/21														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible				" use vim rather than vi settings
+set nocompatible				" Use vim rather than vi settings
 
 " Make it look nice
-set scrolloff			=3		" keep cursortwo lines away from top/bottom
-set laststatus			=2		" enable the status line
-set cmdheight			=2		" make the command line X lines high
+set scrolloff			=3		" Keep cursortwo lines away from top/bottom
+set laststatus			=2		" Enable the status line
+set cmdheight			=2		" Make the command line X lines high
 
-set hlsearch                    " highlight the search term
+set hlsearch                    " Highlight the search term
 
 " Make it less annoying
-" apparently filetype needs to be off for some plugins
-filetype on						" automatic filetype detection
-set number						" linenumbers on
-set ruler                       " turn on ruler
-syntax on						" syntax highlighting
-set visualbell					" no sounds
+" Apparently filetype needs to be off for some plugins
+filetype on						" Automatic filetype detection
+set number						" Line numbers on
+set ruler                       " Turn on ruler
+syntax on						" Syntax highlighting
+set visualbell					" No sounds
 
 " Set the window size
-set lines				=30		" set height
-set columns				=85 	" set width
-set numberwidth			=4		" add extra space by number line
+set lines				=30		" Set height
+set columns				=85 	" Set width
+set numberwidth			=4		" Add extra space by number line
 
-" Setup my tabs
-set shiftwidth			=4		" make the following tab stop every X places
-set tabstop				=4		" use X spaces for tab
-set softtabstop			=4		" make one backspace go back X places 
+" Setup tabs
+set shiftwidth			=4		" Make the following tab stop every X places
+set tabstop				=4		" Use X spaces for tab
+set softtabstop			=4		" Make one backspace go back X places 
 set expandtab			        " Inserts space characters when tab pressed
                                 " Insert a real tab with CTRL_V <tab>
 
-"colorscheme desert				" muted, similar to elflord
-"colorscheme koehler			" brighter than desert, same colors, bold
-"colorscheme ron                " similar to koehler, NOT BOLD
-"colorscheme slate				" also good
+"colorscheme desert				" Muted, similar to elflord
+"colorscheme koehler			" Brighter than desert, same colors, bold
+"colorscheme ron                " Similar to koehler, NOT BOLD
+"colorscheme slate				" Also good
 "colorscheme delek 		
-colorscheme elflord             " generally the best. Thanks S
-"colorscheme peachpuff          " good for dark rooms
+colorscheme elflord             " Generally the best. Thanks S
+"colorscheme peachpuff          " Good for dark rooms
 "colorscheme zellner            "
 
-" scrolling
-set scrolloff			=3	" start scrolling when  lines away from margins
-set sidescrolloff		=15	" I think one of my other options messes this up 
-set sidescroll			=1	" 
+" Scrolling
+set scrolloff			=3	    " Start scrolling when  lines away from margins
+set sidescrolloff		=15	    " I think one of my other options messes this up 
+set sidescroll			=1	    " 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Jump to the last known cursor position. Don't do it when the position is 
@@ -57,10 +57,10 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-" make python nicer
+" Make python nicer
 set textwidth =79   
-set autoindent      " not sure if this works correctly
-set fileformat=unix " stores file in unix format to avoid conversion issues
+set autoindent                  " Not sure if this works correctly in Big Sur
+set fileformat=unix             " Stores file in unix format to avoid conversion issues
 
 " Make vim-plug work
 " Specify a directory for plugins
@@ -71,7 +71,7 @@ set fileformat=unix " stores file in unix format to avoid conversion issues
 " shorthand notation for list of plugins
 " UNCOMMENT THE NEXT LINE
 "Plug 'itchyny/lightline.vim'
-"Plug 'airblade/vim-gitgutter'
+"Plug 'itchyny/landscape.vim'   " Colorscheme
 
 " Initialize plugin system - plugins become visible to vim after this call
 "call plug#end()
