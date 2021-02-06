@@ -1,4 +1,4 @@
-# Last update 01-31-21
+# Last update 02-05-21
 
 # Some Macbook aliases
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
@@ -51,4 +51,4 @@ alias grep='grep --color'           # colorize grep results
 alias h='history'                   # duh
 
 # Navigation Shortcuts
-alias cj='cd ~/workshop/cs312
+alias cj='cd ~/workshop/cs312'
