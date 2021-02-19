@@ -1,9 +1,8 @@
-# Last update 02-18-21
+# Last update 02-19-21
 
 # ---------------------------------
 # Some Macbook aliases
 # ---------------------------------
-
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 
 # ---------------------------------
@@ -29,8 +28,6 @@ alias vbash='vim ~/.bashrc'			# Open bashrc
 alias vprof='vim ~/.bash_profile'   # Open bash profile 
 alias valias='vim ~/.bash_aliases'  # Open bash aliases
 alias vlog='vim ~/.bash_logout'     # Open bash logout
-alias vsql='vim ~/.psqlrc'          # Open psqlrc
-alias vinput='vim ~/.inputrc'       # Open inputrc
 
 # ---------------------------------
 # Python aliases
@@ -45,15 +42,16 @@ alias pv='python --version'         #
 # -G colorizes, -h makes sizes human readable, -F puts / * @
 # ---------------------------------
 alias ls='ls -GFh'                  # Add colors,symbol,readability
-alias la='ls -aF'                   # Show all
+alias la='ls -aGF'                  # Show all
 alias lx='ls -xF'                   # Sort by extension type 
 alias ll='ls -lF'                   # Long list 
-alias lt='ls -l -t -F'              # Long list sorted by date
+alias lt='ls -l -t -F -G'           # Long list sorted by date
 alias c='clear'
 alias ..='cd ..'		            # Up one directory
 alias ...='cd ../..'		        # Up two 
 alias cd~='cd ~'		            # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
+alias mv='mv -i'                    # Ask
 
 # ---------------------------------
 # Moving and finding
@@ -71,7 +69,6 @@ alias h='history'                   # Duh
 # ---------------------------------
 alias cj='cd ~/workshop/cs312'
 
-# This should be the last line of the file
-# For local changes
+# This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_aliases.local" ] && source ".bash_aliases.local"
