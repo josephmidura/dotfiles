@@ -51,6 +51,7 @@ alias ll='ls -lF'                   # Long list
 alias lt='ls -l -t -F'              # Long list sorted by date
 alias c='clear'
 alias ..='cd ..'		            # Up one directory
+alias ...='cd ../..'		        # Up two 
 alias cd~='cd ~'		            # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
 
@@ -69,3 +70,8 @@ alias h='history'                   # Duh
 # Navigation shortcuts
 # ---------------------------------
 alias cj='cd ~/workshop/cs312'
+
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".bash_aliases.local" ] && source ".bash_aliases.local"
