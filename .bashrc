@@ -1,4 +1,4 @@
-# last update 01-23-21
+# last update 02-18-21
 
 # determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -43,7 +43,9 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 #######################################################
+# ---------------------------------
 # color chart is below
+# ---------------------------------
 txtblk='\e[0;30m]' # Black - Regular
 txtred='\e[0;31m' # Red
 txtgrn='\e[0;32m' # Green
@@ -82,6 +84,14 @@ bakwht='\e[47m'   # White
  
 txtrst='\e[0m'    # Text Reset
 
+# ---------------------------------
+# ---------------------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ---------------------------------
+# This should be the last line of the file - for local customization
+# Don't make edits below this
+# ---------------------------------
+[ -f ".bashrc.local" ] && source ".bashrc.local"
