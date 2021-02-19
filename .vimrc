@@ -1,7 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
-" Uncomment end of this file for lightline and other plugins                 "
-" Last update 02/05/21														 "
+" Last update 02/19/21														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" Use vim rather than vi settings
@@ -12,6 +11,7 @@ set laststatus			=2		" Enable the status line
 set cmdheight			=2		" Make the command line X lines high
 
 set hlsearch                    " Highlight the search term
+set incsearch                   " Search as characters are entered
 
 " Make it less annoying
 " Apparently filetype needs to be off for some plugins
@@ -36,10 +36,9 @@ set expandtab			        " Inserts space characters when tab pressed
 "colorscheme desert				" Muted, similar to elflord
 "colorscheme koehler			" Brighter than desert, same colors, bold
 "colorscheme ron                " Similar to koehler, NOT BOLD
-"colorscheme slate				" Also good
+"colorscheme slate				" ???
 "colorscheme delek 		
 colorscheme elflord             " Generally the best. Thanks S
-"colorscheme peachpuff          " Good for dark rooms
 "colorscheme zellner            "
 
 " Scrolling
