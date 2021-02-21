@@ -1,4 +1,5 @@
-# last update 02-18-21
+# last update 02-21-21
+# issues - nvm stuff belongs elsewhere
 
 # determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -18,6 +19,13 @@ fi
 
 # alternative prompt shows history command number + $
 #PS1="\w \! \$ "
+
+# ---------------------------------
+# Running nvm
+# ---------------------------------
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Set terminal colors
 
@@ -42,7 +50,6 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
-#######################################################
 # ---------------------------------
 # color chart is below
 # ---------------------------------
@@ -83,12 +90,6 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
  
 txtrst='\e[0m'    # Text Reset
-
-# ---------------------------------
-# ---------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ---------------------------------
 # This should be the last line of the file - for local customization
