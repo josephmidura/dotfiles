@@ -1,4 +1,4 @@
-# Last update 02-19-21
+# Last update 02-21-21
 
 # ---------------------------------
 # Some Macbook aliases
@@ -34,8 +34,7 @@ alias vlog='vim ~/.bash_logout'     # Open bash logout
 # ---------------------------------
 alias python='python3'			    # Always use python3
 alias jn='jupyter notebook'			# Start jupyter notebook
-alias pipshells='pipenv shell' 		# Start a new shell: 'ps' is different
-alias pv='python --version'         # 
+alias pshell='pipenv shell' 		# Start a new shell: 'ps' is different
 
 # ---------------------------------
 # Terminal aliases
@@ -58,7 +57,7 @@ alias mv='mv -i'                    # Ask
 # ---------------------------------
 alias cp='cp -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask for permission 
-alias cat='cat -n'                  # Line numbers in cat
+#alias cat='cat -n'                  # Line numbers in cat
 alias sbash='source ~/.bashrc'		# Re-source this file
 alias svim='source ~/.vimrc'		# Source vimrc
 alias grep='grep --color'           # Colorize grep results
