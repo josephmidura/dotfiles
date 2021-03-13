@@ -65,6 +65,24 @@ set textwidth           =79
 set autoindent                  " Not sure if this works correctly in Big Sur
 set fileformat          =unix   " Store file in unix format to avoid conversion issues
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set viminfo file                                                           "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set viminfo     ='500,f1,<1000,:100,h,%
+"                |    |  |     |    | |
+"                |    |  |     |    | |
+"                |    |  |     |    | +- Save and restore the buffer list(if a
+"                |    |  |     |    |    file is not specified to open on the
+"                |    |  |     |    |    command line
+"                |    |  |     |    +--- Disable hlsearch when starting
+"                |    |  |     +-------- Save X lines of command line history
+"                |    |  +-------------- Use a maximimum of X lines per register
+"                |    +----------------- Save global marks(A-Z and 0-9)(1=stored)
+"                +---------------------- Save marks for X files
+
+
 " Make vim-plug work
 " Specify a directory for plugins
 " Plugins will be downloaded under the specified directory.
