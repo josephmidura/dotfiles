@@ -21,14 +21,17 @@ colorscheme elflord             " Generally the best. Thanks S
 " Improve Searching
 set hlsearch                    " Highlight the search term
 set incsearch                   " Search as characters are entered
+set ignorecase                  " Make search case insensitive
+set smartcase                   " Make search case sensitive if capital present
 
 
-set laststatus			=2		" Enable the status line
+set laststatus			=2		" Enable the status line always
 
 " Make it less annoying
 " Apparently filetype needs to be off for some plugins
 filetype on						" Automatic filetype detection
 set number						" Line numbers on
+"set relativenumber				" Set numbers relaative to current line
 set ruler                       " Turn on ruler
 syntax on						" Syntax highlighting
 set visualbell					" No sounds
