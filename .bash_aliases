@@ -1,4 +1,4 @@
-# Last update 02-21-21
+# Last update 03-15-21
 
 # ---------------------------------
 # Some Macbook aliases
@@ -17,6 +17,7 @@ alias speedtest='speedtest-cli'     # Run speedtest
 alias gitp='git push origin'
 alias gitc='git commit -m'
 alias gits='git status'
+alias gita='git add'
 
 # ---------------------------------
 # Vim aliases
