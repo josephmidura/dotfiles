@@ -20,6 +20,10 @@ fi
 # alternative prompt shows history command number + $
 #PS1="\w \! \$ "
 
+# always us vi. Use this as an alternative to 'set -0 vi' (bash only)
+export editor=vi
+
+
 # ---------------------------------
 # Running nvm
 # ---------------------------------
