@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 "                                                                            "
-" Last update 02/20/21														 "
+" Last update 03/20/21														 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible				" Use vim rather than vi settings
@@ -10,20 +10,14 @@ set nocompatible				" Use vim rather than vi settings
 set scrolloff			=3		" Keep cursortwo lines away from top/bottom
 set cmdheight			=2		" Make the command line X lines high
 
-" Colorschemes
-colorscheme elflord             " Generally the best. Thanks S
-"colorscheme desert				" Muted, similar to elflord
-"colorscheme koehler			" Brighter than desert, same colors, bold
-"colorscheme ron                " Similar to koehler, NOT BOLD
-"colorscheme slate				" ???
-"colorscheme delek 		
+" Colorscheme fallback if nothing else installed
+colorscheme elflord             " My favorite. Thanks S
 
 " Improve Searching
 set hlsearch                    " Highlight the search term
 set incsearch                   " Search as characters are entered
 set ignorecase                  " Make search case insensitive
 set smartcase                   " Make search case sensitive if capital present
-
 
 set laststatus			=2		" Enable the status line always
 
@@ -45,7 +39,7 @@ set numberwidth			=4		" Add extra space by number line
 set shiftwidth			=4		" Make the following tab stop every X places
 set tabstop				=4		" Use X spaces for tab
 set softtabstop			=4		" Make one backspace go back X places 
-set expandtab			        " Inserts spaces instead of tabs 
+set expandtab			        " Insert spaces instead of tabs 
                                 " Insert a real tab with CTRL-V <tab>
 
 " Scrolling
