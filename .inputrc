@@ -1,4 +1,4 @@
-# last update 03/15/21
+# last update 03/21/21
 
 # Sources
 # http://brettterpstra.com/2015/07/09/shell-tricks-inputrc-binding-fun/
@@ -10,8 +10,8 @@
 # Use vim emulator for programs that use GNU Readline 
 set editing-mode vi 
 
-"\e[A": history-search-backward
-"\e[B": history-search-forward
+#"\e[A": history-search-backward
+#"\e[B": history-search-forward
 set show-all-if-ambiguous on
 set completion-ignore-case on
 TAB: menu-complete
