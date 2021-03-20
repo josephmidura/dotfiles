@@ -1,3 +1,5 @@
 .mode column
 .headers on
 .nullvalue NULL
+.timer on
+.prompt "> "
