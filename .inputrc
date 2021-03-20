@@ -1,4 +1,4 @@
-# last update 03/21/21
+# last update 03/20/21
 
 # Sources
 # http://brettterpstra.com/2015/07/09/shell-tricks-inputrc-binding-fun/
@@ -12,27 +12,27 @@ set editing-mode vi
 
 #"\e[A": history-search-backward
 #"\e[B": history-search-forward
-set show-all-if-ambiguous on
-set completion-ignore-case on
-TAB: menu-complete
+#set show-all-if-ambiguous on
+#set completion-ignore-case on
+#TAB: menu-complete
 
 #https://gist.github.com/gregorynicholas/1812027
 
-"\e[1~": beginning-of-line
-"\e[4~": end-of-line
-"\e[5~": history-search-backward
-"\e[6~": history-search-forward
-"\e[3~": delete-char
-"\e[2~": quoted-insert
-"\e[5C": forward-word
-"\e[5D": backward-word
-"\e\e[C": forward-word
-"\e\e[D": backward-word
+#"\e[1~": beginning-of-line
+#"\e[4~": end-of-line
+#"\e[5~": history-search-backward
+#"\e[6~": history-search-forward
+#"\e[3~": delete-char
+#"\e[2~": quoted-insert
+#"\e[5C": forward-word
+#"\e[5D": backward-word
+#"\e\e[C": forward-word
+#"\e\e[D": backward-word
 
-set completion-ignore-case On
-set expand-tilde on
-set convert-meta off
-set input-meta on
-set output-meta on
-set show-all-if-ambiguous on
-set visible-stats on
+#set completion-ignore-case On
+#set expand-tilde on
+#set convert-meta off
+#set input-meta on
+#set output-meta on
+#set show-all-if-ambiguous on
+#set visible-stats on
