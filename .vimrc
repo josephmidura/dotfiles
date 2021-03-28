@@ -7,7 +7,7 @@
 set nocompatible        " Use vim rather than vi settings
 
 " Make it look nice
-set scrolloff   =3      " Keep cursortwo lines away from top/bottom
+set scrolloff   =3      " Keep cursor two lines away from top/bottom
 set cmdheight   =2      " Make the command line X lines high
 
 " Colorscheme fallback if nothing else installed
