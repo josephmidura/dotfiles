@@ -1,5 +1,5 @@
-# last update 02-21-21
-# issues - nvm stuff belongs elsewhere
+# last update 04-03-21
+# issues - nvm stuff belongs in bash_profile? Color chart belongs elsewhere.
 
 # determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
