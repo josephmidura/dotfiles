@@ -1,2 +1,2 @@
 # dotfiles
-Setup a new environment in mac using bash
+Setup a new environment in (usually) macOS using bash
