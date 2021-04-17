@@ -17,6 +17,7 @@ else
     PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 fi
 
+
 # alternative prompt shows history command number + $
 #PS1="\w \! \$ "
 
