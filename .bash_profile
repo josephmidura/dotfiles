@@ -9,8 +9,7 @@ fi
 export PATH="$HOME/bin:$PATH"
 
 # Set PATH for Python in homebrew
-# Currently using 3.8.2 from MacOS
-#export PATH="usr/local/opt/python@3.8/bin:$PATH" 
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Set PATH for Git in homebrew
 export PATH="usr/local/opt/git/bin:$PATH" 
