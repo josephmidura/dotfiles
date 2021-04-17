@@ -1,7 +1,8 @@
-# last update 04-10-21
-# issues - nvm stuff belongs in bash_profile? Color chart belongs elsewhere.
+# Last update 04-17-21
+# Issues - nvm stuff belongs in bash_profile? 
+# Color chart belongs elsewhere.
 
-# determine whether this is the login script
+# Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
 
 # Source the aliases file
@@ -9,7 +10,7 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-# color prompt and make root red (w vs W changes pwd options)
+# Color prompt and make root red (w vs W changes pwd options)
 if [ `id -u` = 0 ]
 then
     PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] "
@@ -18,11 +19,14 @@ else
 fi
 
 
-# alternative prompt shows history command number + $
+# Alternative prompt shows history command number + $
 #PS1="\w \! \$ "
 
-# always us vi. Use this as an alternative to 'set -0 vi' (bash only)
+# Always us vi. Use this as an alternative to 'set -0 vi' (bash only)
 export editor=vi
+
+# Turn off Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
 
 
 # ---------------------------------
