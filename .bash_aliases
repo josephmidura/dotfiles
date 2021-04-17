@@ -67,7 +67,7 @@ alias h='history'                   # Duh
 # ---------------------------------
 # Navigation shortcuts
 # ---------------------------------
-alias cj='cd ~/workshop/cs312'
+
 
 # This should be the last line of the file - for local customization
 # Don't make edits below this
