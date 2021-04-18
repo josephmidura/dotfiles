@@ -1,4 +1,4 @@
-# Last update 03-15-21
+# Last update 04-18-21
 
 # ---------------------------------
 # Some Macbook aliases
@@ -35,7 +35,6 @@ alias vlog='vim ~/.bash_logout'     # Open bash logout
 # ---------------------------------
 alias python='python3'			    # Always use python3
 alias jn='jupyter notebook'			# Start jupyter notebook
-alias pshell='pipenv shell' 		# Start a new shell: 'ps' is different
 
 # ---------------------------------
 # Terminal aliases
