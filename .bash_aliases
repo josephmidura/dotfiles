@@ -12,14 +12,6 @@ alias ping='ping -c 10'             # Limit to 10 pings
 alias speedtest='speedtest-cli'     # Run speedtest
 
 # ---------------------------------
-# Git aliases
-# ---------------------------------
-alias gitp='git push origin'
-alias gitc='git commit -m'
-alias gits='git status'
-alias gita='git add'
-
-# ---------------------------------
 # Vim aliases
 # ---------------------------------
 alias v='vim'          			    # Always use vim
