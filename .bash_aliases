@@ -1,4 +1,4 @@
-# Last update 04-18-21
+# Last update 05-04-21
 
 # ---------------------------------
 # Some Macbook aliases
@@ -59,6 +59,7 @@ alias h='history'                   # Duh
 # Navigation shortcuts
 # ---------------------------------
 
+# I should put shortcuts in .bash_aliases.local
 
 # This should be the last line of the file - for local customization
 # Don't make edits below this
