@@ -1,4 +1,4 @@
-# Last update 04-17-21
+# Last update 05-09-21
 # Issues - nvm stuff belongs in bash_profile? 
 # Color chart belongs elsewhere.
 
@@ -27,6 +27,9 @@ export editor=vi
 
 # Turn off Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
+
+# Replace Clang with gcc
+export CC=gcc
 
 
 # ---------------------------------
