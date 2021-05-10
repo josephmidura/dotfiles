@@ -1,4 +1,4 @@
-# Last update 05-04-21
+# Last update 05-09-21
 
 # ---------------------------------
 # Some Macbook aliases
@@ -43,6 +43,12 @@ alias ...='cd ../..'		        # Up two
 alias cd~='cd ~'		            # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask
+
+# ---------------------------------
+# Heroku
+# ---------------------------------
+
+alias h='heroku'                    # Less typing
 
 # ---------------------------------
 # Moving and finding
