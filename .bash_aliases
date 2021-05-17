@@ -33,7 +33,7 @@ alias jn='jupyter notebook'			# Start jupyter notebook
 # -G colorizes, -h makes sizes human readable, -F puts / * @
 # ---------------------------------
 alias ls='ls -GFh'                  # Add colors,symbol,readability
-alias la='ls -aGF'                  # Show all
+alias la='ls -altGF'                # Show all, long list, date, symbol,readable
 alias lx='ls -xF'                   # Sort by extension type 
 alias ll='ls -lF'                   # Long list 
 alias lt='ls -l -t -F -G'           # Long list sorted by date
