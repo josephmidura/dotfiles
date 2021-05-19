@@ -1,4 +1,4 @@
-# Last update 05/13/21
+# Last update 05/18/21
 
 # Source the .bashrc
 if [ -f ~/.bashrc ]; then
@@ -20,10 +20,10 @@ eval "$(rbenv init -)"
 # Set gem path
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
+# Set GPOATH
+export PATH=$GOPATH/bin:$PATH
+
 ## Sometimes it's fun to run archey here
-
-
-
 
 # This should be the last line of the file - for local customization
 # Don't make edits below this
