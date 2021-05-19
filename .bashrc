@@ -1,6 +1,6 @@
-# Last update 05-09-21
+# Last update 05-18-21
 # Issues - nvm stuff belongs in bash_profile? 
-# Color chart belongs elsewhere.
+# Color chart belongs elsewhere and needs update
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -39,18 +39,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# ---------------------------------
 # Set terminal colors
+# ---------------------------------
 
 # This is equivalent to ls -G. See man ls for details because I alias this also
 export CLICOLOR=1
 
-#not sure what the next line does
+# Terminal colors 
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Remove duplicate history entries
 export HISTCONTROL=ignoreboth:erasedups
 
-#https://www.tecmint.com/display-linux-command-history-with-date-and-time/
+# Set date and time in history
 export HISTTIMEFORMAT='%F %T'
 
 # Colorize man output
