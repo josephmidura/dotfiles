@@ -6,6 +6,9 @@ if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
 
+# Supress message about zsh when terminal launches
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Execute a shell script from any directory 
 export PATH="$HOME/bin:$PATH"
 
