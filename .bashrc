@@ -1,4 +1,4 @@
-# Last update 05-18-21
+# Last update 05-31-21
 # Issues - nvm stuff belongs in bash_profile? 
 # Color chart belongs elsewhere and needs update
 
@@ -55,14 +55,14 @@ export HISTCONTROL=ignoreboth:erasedups
 # Set date and time in history
 export HISTTIMEFORMAT='%F %T'
 
-# Colorize man output
-export LESS_TERMCAP_mb=$'\e[1;35m'
-export LESS_TERMCAP_md=$'\e[1;35m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[01;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;4;31m'
+# Colorize man output with less
+export LESS_TERMCAP_mb=$'\e[1;35m'      # Begin blinking
+export LESS_TERMCAP_md=$'\e[1;35m'      # Begin bold
+export LESS_TERMCAP_me=$'\e[0m'         # End mode
+export LESS_TERMCAP_se=$'\e[0m'         # End standout-mode
+export LESS_TERMCAP_so=$'\e[01;33m'     # Begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\e[0m'         # End underline
+export LESS_TERMCAP_us=$'\e[1;4;31m'    # Begin underline
 
 # ---------------------------------
 # color chart is below
