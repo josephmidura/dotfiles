@@ -1,4 +1,5 @@
-# Last update 06-04-21
+# Last update 06-25-21
+#
 # Issues - nvm stuff belongs in bash_profile? 
 # Color chart belongs elsewhere and needs update
 
@@ -31,7 +32,7 @@ export editor=vi
 # Turn off Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
 
-# Replace Clang with gcc
+# Replace Clang with gcc to avoid problems with Go
 export CC=gcc
 
 
@@ -51,6 +52,7 @@ export CLICOLOR=1
 
 # Terminal colors 
 export LSCOLORS=ExFxBxDxCxegedabagacad
+#export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Remove duplicate history entries
 export HISTCONTROL=ignoreboth:erasedups
@@ -121,3 +123,6 @@ txtrst='\e[0m'     # Text Reset
 # Don't make edits below this
 # ---------------------------------
 [ -f ".bashrc.local" ] && source ".bashrc.local"
+
+# Created by `pipx` on 2021-06-14 17:32:42
+export PATH="$PATH:/Users/loki/.local/bin"
