@@ -10,6 +10,9 @@ set nocompatible        " Use vim rather than vi settings
 set scrolloff   =3      " Keep cursortwo lines away from top/bottom
 set cmdheight   =2      " Make the command line X lines high
 
+" Enable 256 colors
+set t_Co=256
+
 " Colorscheme fallback if nothing else installed
 colorscheme elflord     " My favorite. Thanks S
 
@@ -91,8 +94,7 @@ call plug#begin('~/.vim/plugged')
 " Shorthand notation for list of plugins
 " Uncomment the next line(s)
 Plug 'itchyny/lightline.vim'
-Plug 'itchyny/landscape.vim'   " Colorscheme
-
+Plug 'preservim/nerdtree'
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
 
