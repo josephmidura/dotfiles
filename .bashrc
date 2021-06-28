@@ -1,4 +1,4 @@
-# Last update 06-25-21
+# Last update 06-27-21
 #
 # Issues - nvm stuff belongs in bash_profile? 
 # Color chart belongs elsewhere and needs update
@@ -22,9 +22,17 @@ else
     PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 fi
 
-
 # Alternative prompt shows history command number + $
 #PS1="\w \! \$ "
+
+# Set number of files in bash_history
+HISTFILESIZE=2500
+
+# Remove duplicate history entries
+export HISTCONTROL=ignoreboth:erasedups
+
+# Display commands with date and time
+export HISTTIMEFORMAT='%F %T'
 
 # Always us vi. Use this as an alternative to 'set -0 vi' (bash only)
 export editor=vi
