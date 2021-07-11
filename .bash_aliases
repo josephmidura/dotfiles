@@ -1,9 +1,10 @@
-# Last update 05-09-21
+# Last update 07-10-21
 
 # ---------------------------------
-# Some Macbook aliases
+# Some random aliases
 # ---------------------------------
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
+alias bejs='bundle exec jekyll serve'
 
 # ---------------------------------
 # Network aliases
