@@ -1,4 +1,4 @@
-# Last update 07-10-21
+# Last update 07-11-21
 
 # ---------------------------------
 # Some random aliases
@@ -11,6 +11,11 @@ alias bejs='bundle exec jekyll serve'
 # ---------------------------------
 alias ping='ping -c 10'             # Limit to 10 pings
 alias speedtest='speedtest-cli'     # Run speedtest
+
+# ---------------------------------
+# Git aliases
+# ---------------------------------
+alias gitc='git commit -s -m'       # Sign and message for commits
 
 # ---------------------------------
 # Vim aliases
