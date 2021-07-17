@@ -26,7 +26,6 @@ alias vvim='vim ~/.vimrc'			# Open vimrc
 alias vbash='vim ~/.bashrc'			# Open bashrc 
 alias vprof='vim ~/.bash_profile'   # Open bash profile 
 alias valias='vim ~/.bash_aliases'  # Open bash aliases
-alias vlog='vim ~/.bash_logout'     # Open bash logout
 
 # ---------------------------------
 # Python aliases
