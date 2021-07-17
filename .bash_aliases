@@ -64,7 +64,7 @@ alias mv='mv -i'                    # Ask for permission
 alias sbash='source ~/.bashrc'		# Re-source this file
 alias svim='source ~/.vimrc'		# Source vimrc
 alias grep='grep --color'           # Colorize grep results
-alias h='history'                   # Duh
+alias his='history'                 # Duh
 
 # ---------------------------------
 # Navigation shortcuts
