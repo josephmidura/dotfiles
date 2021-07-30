@@ -1,4 +1,4 @@
-# Last update 07-11-21
+# Last update 07-29-21
 
 # ---------------------------------
 # Some random aliases
@@ -16,22 +16,23 @@ alias speedtest='speedtest-cli'     # Run speedtest
 # Git aliases
 # ---------------------------------
 alias gitc='git commit -s -m'       # Sign and message for commits
+alias add='add -p'                  # Always use this flag 
 
 # ---------------------------------
 # Vim aliases
 # ---------------------------------
-alias v='vim'          			    # Always use vim
-alias vi='vim'          			# Always use vim
-alias vvim='vim ~/.vimrc'			# Open vimrc
-alias vbash='vim ~/.bashrc'			# Open bashrc 
+alias v='vim'                       # Always use vim
+alias vi='vim'                      # Always use vim
+alias vvim='vim ~/.vimrc'           # Open vimrc
+alias vbash='vim ~/.bashrc'         # Open bashrc 
 alias vprof='vim ~/.bash_profile'   # Open bash profile 
 alias valias='vim ~/.bash_aliases'  # Open bash aliases
 
 # ---------------------------------
 # Python aliases
 # ---------------------------------
-alias python='python3'			    # Always use python3
-alias jn='jupyter notebook'			# Start jupyter notebook
+alias python='python3'              # Always use python3
+alias jn='jupyter notebook'         # Start jupyter notebook
 
 # ---------------------------------
 # Terminal aliases
@@ -43,9 +44,9 @@ alias lx='ls -xF'                   # Sort by extension type
 alias ll='ls -lF'                   # Long list 
 alias lt='ls -l -t -F -G'           # Long list sorted by date
 alias c='clear'
-alias ..='cd ..'		            # Up one directory
-alias ...='cd ../..'		        # Up two 
-alias cd~='cd ~'		            # Fix a common error
+alias ..='cd ..'                    # Up one directory
+alias ...='cd ../..'                # Up two 
+alias cd~='cd ~'                    # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask
 
@@ -61,8 +62,8 @@ alias h='heroku'                    # Less typing
 alias cp='cp -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask for permission 
 #alias cat='cat -n'                  # Line numbers in cat
-alias sbash='source ~/.bashrc'		# Re-source this file
-alias svim='source ~/.vimrc'		# Source vimrc
+alias sbash='source ~/.bashrc'      # Re-source this file
+alias svim='source ~/.vimrc'        # Source vimrc
 alias grep='grep --color'           # Colorize grep results
 alias his='history'                 # Duh
 
