@@ -1,4 +1,4 @@
-# Last update 07-29-21
+# Last update 07-30-21
 
 # ---------------------------------
 # Some random aliases
@@ -49,6 +49,7 @@ alias ...='cd ../..'                # Up two
 alias cd~='cd ~'                    # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask
+alias x='exit'                      # Exit 
 
 # ---------------------------------
 # Heroku
