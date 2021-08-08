@@ -1,4 +1,4 @@
-# Last update 08-06-21
+# Last update 08-08-21
 #
 # Issues - nvm stuff belongs in bash_profile? 
 # Color chart belongs elsewhere and needs update
@@ -28,8 +28,8 @@ fi
 # Set number of files in bash_history
 HISTFILESIZE=2500
 
-# Remove duplicate history entries
-export HISTCONTROL=ignoreboth:erasedups
+# Remove duplicate history entries (Sometimes I want the duplicates)
+#export HISTCONTROL=ignoreboth:erasedups
 
 # Display commands with date and time
 export HISTTIMEFORMAT='%F %T'
