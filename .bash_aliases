@@ -1,10 +1,11 @@
-# Last update 07-30-21
+# Last update 08-08-21
 
 # ---------------------------------
 # Some random aliases
 # ---------------------------------
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 alias bejs='bundle exec jekyll serve'
+alias dk='docker stop $(docker ps -a -q)' # Stop all Docker containers
 
 # ---------------------------------
 # Network aliases
