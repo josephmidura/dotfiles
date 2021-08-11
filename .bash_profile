@@ -1,4 +1,4 @@
-# Last update 05/28/21
+# Last update 08/10/21
 # Issues: I'm not sure I want rbenv running automatically
 
 # Source the .bashrc
@@ -19,7 +19,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="usr/local/opt/git/bin:$PATH" 
 
 # Run rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # Set gem path
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
@@ -30,3 +30,6 @@ export PATH=$GOPATH/bin:$PATH
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
+
+# Created by `pipx` on 2021-06-14 17:32:42
+export PATH="$PATH:/Users/loki/.local/bin"
