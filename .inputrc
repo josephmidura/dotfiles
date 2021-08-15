@@ -1,14 +1,11 @@
-# last update 03/20/21
+# last update 8/15/21
 
-# Sources
-# http://brettterpstra.com/2015/07/09/shell-tricks-inputrc-binding-fun/
-
-# https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html#Readline-Init-File-Syntax
+# https://tiswww.case.edu/php/chet/readline/rltop.html
 
 # http://osxdaily.com/2013/04/24/improve-command-line-history-search/
 
 # Use vim emulator for programs that use GNU Readline 
-set editing-mode vi 
+# Set editing-mode vi 
 
 #"\e[A": history-search-backward
 #"\e[B": history-search-forward
@@ -16,7 +13,7 @@ set editing-mode vi
 #set completion-ignore-case on
 #TAB: menu-complete
 
-#https://gist.github.com/gregorynicholas/1812027
+# https://gist.github.com/gregorynicholas/1812027
 
 #"\e[1~": beginning-of-line
 #"\e[4~": end-of-line
