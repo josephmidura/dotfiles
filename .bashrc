@@ -1,4 +1,4 @@
-# Last update 08-08-21
+# Last update 08-15-21
 #
 # Issues - nvm stuff belongs in bash_profile? 
 # Color chart belongs elsewhere and needs update
@@ -127,6 +127,3 @@ txtrst='\e[0m'     # Text Reset
 # Don't make edits below this
 # ---------------------------------
 [ -f ".bashrc.local" ] && source ".bashrc.local"
-
-# Created by `pipx` on 2021-06-14 17:32:42
-export PATH="$PATH:/Users/loki/.local/bin"
