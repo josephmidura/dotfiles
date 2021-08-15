@@ -1,4 +1,4 @@
-# Last update 08/10/21
+# Last update 08/15/21
 # Issues: I'm not sure I want rbenv running automatically
 
 # Source the .bashrc
@@ -30,6 +30,3 @@ export PATH=$GOPATH/bin:$PATH
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
-
-# Created by `pipx` on 2021-06-14 17:32:42
-export PATH="$PATH:/Users/loki/.local/bin"
