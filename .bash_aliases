@@ -21,7 +21,7 @@ alias speedtest='speedtest-cli'     # Run speedtest
 # Git aliases
 # ---------------------------------
 alias gitc='git commit -s -m'       # Sign and message for commits
-alias add='add -p'                  # Always use this flag 
+alias gita='git add -p'             # Always use this flag 
 
 # ---------------------------------
 # Vim aliases
