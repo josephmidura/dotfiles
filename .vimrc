@@ -61,7 +61,7 @@ autocmd BufReadPost *
     \ endif
 
 " Make python nicer
-set textwidth   =79     " 
+set textwidth   =72     " Wrap text for an 80 column terminal
 set autoindent          " Not sure if this works correctly in Big Sur
 set fileformat  =unix   " Store file in unix format to avoid conversion issues
 
