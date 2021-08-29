@@ -1,10 +1,11 @@
-# Last update 08-09-21
+# Last update 08-29-21
 
 # ---------------------------------
 # Some random aliases
 # ---------------------------------
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 alias bejs='bundle exec jekyll serve'
+alias h='heroku'                    # Less typing
 
 # ---------------------------------
 # Docker aliases
@@ -22,6 +23,7 @@ alias speedtest='speedtest-cli'     # Run speedtest
 # ---------------------------------
 alias gitc='git commit -s -m'       # Sign and message for commits
 alias gita='git add -p'             # Always use this flag 
+alias gb='git branch'
 
 # ---------------------------------
 # Vim aliases
@@ -55,12 +57,6 @@ alias cd~='cd ~'                    # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask
 alias x='exit'                      # Exit 
-
-# ---------------------------------
-# Heroku
-# ---------------------------------
-
-alias h='heroku'                    # Less typing
 
 # ---------------------------------
 # Moving and finding
