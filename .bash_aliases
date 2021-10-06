@@ -1,4 +1,4 @@
-# Last update 08-29-21
+# Last update 10-06-21
 
 # ---------------------------------
 # Some random aliases
@@ -6,6 +6,7 @@
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 alias bejs='bundle exec jekyll serve'
 alias h='heroku'                    # Less typing
+alias sql='sqlite3'                 # Abbreviate
 
 # ---------------------------------
 # Docker aliases
