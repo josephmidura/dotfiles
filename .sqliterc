@@ -2,4 +2,4 @@
 .headers on
 .nullvalue NULL
 .timer on
-.prompt "> "
+.prompt "sqlite> "
