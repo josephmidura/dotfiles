@@ -1,13 +1,13 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 "                                                                            "
-" Last update 04/17/21                                                       "
+" Last update 10/16/21                                                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
 
 " Make it look nice
-set scrolloff   =3      " Keep cursortwo lines away from top/bottom
+set scrolloff   =3      " Keep cursor X lines away from top/bottom
 set cmdheight   =2      " Make the command line X lines high
 
 " Enable 256 colors
@@ -36,7 +36,7 @@ set visualbell          " No sounds
 " Set the window size
 set lines       =30     " Set height
 set columns     =85     " Set width
-set numberwidth =4      " Add extra space by number line
+set numberwidth =4      " Add X spaces by number line
 
 " Setup tabs
 set shiftwidth  =4      " Make the following tab stop every X places
@@ -46,7 +46,7 @@ set expandtab           " Insert spaces instead of tabs
                         " Insert a real tab with CTRL-V <tab>
 
 " Scrolling
-set scrolloff   =3      " Start scrolling when  lines away from margins
+set scrolloff   =3      " Start scrolling when X lines away from margins
 set sidescrolloff=15    " I think one of my other options messes this up 
 set sidescroll  =1      " 
 
@@ -83,7 +83,7 @@ set viminfo     ='500,f1,<1000,:100,h,%
 "                +---------------------- Save marks for X files
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Make vim-plug work                                                         "
+" Enable vim-plug                                                            "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Specify a directory for plugins
@@ -95,6 +95,6 @@ call plug#begin('~/.vim/plugged')
 " Uncomment the next line(s)
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
+
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
-
