@@ -24,7 +24,7 @@ export PATH="usr/local/opt/git/bin:$PATH"
 # Set gem path
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
-# Set GPOATH
+# Set GO PATH
 export PATH=$GOPATH/bin:$PATH
 
 # This should be the last line of the file - for local customization
