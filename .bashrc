@@ -1,7 +1,6 @@
-# Last update 08-15-21
+# Last update 11-11-21
 #
-# Issues - nvm stuff belongs in bash_profile? 
-# Color chart belongs elsewhere and needs update
+# Issues - nvm stuff belongs in bash_profile
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -21,9 +20,6 @@ then
 else
     PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 fi
-
-# Alternative prompt shows history command number + $
-#PS1="\w \! \$ "
 
 # Set number of files in bash_history
 HISTFILESIZE=2500
