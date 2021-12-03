@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 "                                                                            "
-" Last update 10/16/21                                                       "
+" Last update 12/03/21                                                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -9,6 +9,8 @@ set nocompatible        " Use vim rather than vi settings
 " Make it look nice
 set scrolloff   =3      " Keep cursor X lines away from top/bottom
 set cmdheight   =2      " Make the command line X lines high
+set laststatus  =2      " Enable the status line always
+"set showmatch           " Briefly jump to matching brace on inserted
 
 " Enable 256 colors
 set t_Co=256
@@ -21,8 +23,6 @@ set hlsearch            " Highlight the search term
 set incsearch           " Search as characters are entered
 set ignorecase          " Make search case insensitive
 set smartcase           " Make search case sensitive if capital present
-
-set laststatus  =2      " Enable the status line always
 
 " Make it less annoying
 " Apparently filetype needs to be off for some plugins
@@ -89,12 +89,12 @@ set viminfo     ='500,f1,<1000,:100,h,%
 " Specify a directory for plugins
 " Plugins must be downloaded under the specified directory.
 " Uncomment the next line
-call plug#begin('~/.vim/plugged') 
+"call plug#begin('~/.vim/plugged') 
 
 " Shorthand notation for list of plugins
 " Uncomment the next line(s)
-Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'
+"Plug 'itchyny/lightline.vim'
+"Plug 'preservim/nerdtree'
 
 " Initialize plugin system - plugins become visible to vim after this call
-call plug#end()
+"call plug#end()
