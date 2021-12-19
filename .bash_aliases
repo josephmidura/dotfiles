@@ -1,4 +1,4 @@
-# Last update 10-06-21
+# Last update 12-19-21
 
 # ---------------------------------
 # Some random aliases
@@ -47,10 +47,10 @@ alias jn='jupyter notebook'         # Start jupyter notebook
 # -G colorizes, -h makes sizes human readable, -F puts / * @
 # ---------------------------------
 alias ls='ls -GFh'                  # Add colors,symbol,readability
-alias la='ls -AtGF'                 # Show all, date, symbol,readable
-alias lx='ls -xF'                   # Sort by extension type 
-alias ll='ls -lF'                   # Long list 
-alias lt='ls -l -t -F -G'           # Long list sorted by date
+alias la='ls -At'                   # Show all, date, symbol,readable
+alias lx='ls -x'                    # Sort by extension type 
+alias ll='ls -l'                    # Long list 
+alias lt='ls -l -t'                 # Long list sorted by date
 alias c='clear'
 alias ..='cd ..'                    # Up one directory
 alias ...='cd ../..'                # Up two 
