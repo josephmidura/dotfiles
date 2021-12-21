@@ -1,4 +1,4 @@
-# Last update 12-19-21
+# Last update 12-21-21
 
 # ---------------------------------
 # Some random aliases
@@ -49,7 +49,7 @@ alias jn='jupyter notebook'         # Start jupyter notebook
 alias ls='ls -GFh'                  # Add colors,symbol,readability
 alias la='ls -At'                   # Show all, date, symbol,readable
 alias lx='ls -x'                    # Sort by extension type 
-alias ll='ls -l'                    # Long list 
+alias ll='ls -l -a'                 # Long list 
 alias lt='ls -l -t'                 # Long list sorted by date
 alias c='clear'
 alias ..='cd ..'                    # Up one directory
