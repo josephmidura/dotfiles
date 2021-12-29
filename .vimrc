@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make vim work better.                                                      "
 "                                                                            "
-" Last update 12/03/21                                                       "
+" Last update 12/29/21                                                       "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -65,7 +65,6 @@ set textwidth   =72     " Wrap text for an 80 column terminal
 set autoindent          " Not sure if this works correctly in Big Sur
 set fileformat  =unix   " Store file in unix format to avoid conversion issues
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set viminfo file                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -89,12 +88,12 @@ set viminfo     ='500,f1,<1000,:100,h,%
 " Specify a directory for plugins
 " Plugins must be downloaded under the specified directory.
 " Uncomment the next line
-"call plug#begin('~/.vim/plugged') 
+call plug#begin('~/.vim/plugged') 
 
 " Shorthand notation for list of plugins
 " Uncomment the next line(s)
-"Plug 'itchyny/lightline.vim'
-"Plug 'preservim/nerdtree'
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
 
 " Initialize plugin system - plugins become visible to vim after this call
-"call plug#end()
+call plug#end()
