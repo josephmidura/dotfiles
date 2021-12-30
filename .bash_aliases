@@ -1,4 +1,4 @@
-# Last update 12-21-21
+# Last update 12-29-21
 
 # ---------------------------------
 # Some random aliases
@@ -18,6 +18,7 @@ alias dk='docker stop $(docker ps -a -q)' # Stop all Docker containers
 # ---------------------------------
 alias ping='ping -c 10'             # Limit to 10 pings
 alias speedtest='speedtest-cli'     # Run speedtest
+alias nq='networkQuality'           # Network Quality tool in Monterey
 
 # ---------------------------------
 # Git aliases
