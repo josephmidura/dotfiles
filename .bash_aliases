@@ -1,4 +1,4 @@
-# Last update 12-29-21
+# Last update 1-2-22
 
 # ---------------------------------
 # Some random aliases
@@ -45,7 +45,6 @@ alias jn='jupyter notebook'         # Start jupyter notebook
 
 # ---------------------------------
 # Terminal aliases
-# -G colorizes, -h makes sizes human readable, -F puts / * @
 # ---------------------------------
 alias ls='ls -GFh'                  # Add colors,symbol,readability
 alias la='ls -At'                   # Show all, date, symbol,readable
