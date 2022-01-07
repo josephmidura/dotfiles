@@ -1,8 +1,8 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Make vim work better.                                                      "
-"                                                                            "
-" Last update 12/29/21                                                       "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Make vim work better.                                                   "
+"                                                                         "
+" Last update 12/29/21                                                    "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
 
@@ -50,11 +50,13 @@ set scrolloff   =3      " Start scrolling when X lines away from margins
 set sidescrolloff=15    " I think one of my other options messes this up 
 set sidescroll  =1      " 
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Jump to the last known cursor position. Don't do it when the position is   "
-" invalid or inside an event handler (happens when dropping a file on gvim). "
-" Also don't do it when the mark is in the first line (default position)     "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Jump to the last known cursor position. Don't do it when the position   "
+" is invalid or inside an event handler (happens when dropping a file     "
+" on gvim).                                                               "
+"                                                                         "
+" Also don't do it when the mark is in the first line (default position)  "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufReadPost *
     \ if line("'\"") >1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
@@ -65,9 +67,9 @@ set textwidth   =72     " Wrap text for an 80 column terminal
 set autoindent          " Not sure if this works correctly in Big Sur
 set fileformat  =unix   " Store file in unix format to avoid conversion issues
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set viminfo file                                                           "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set viminfo file                                                        "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set viminfo     ='500,f1,<1000,:100,h,%
 "                |    |  |     |    | |
@@ -81,9 +83,9 @@ set viminfo     ='500,f1,<1000,:100,h,%
 "                |    +----------------- Save global marks(A-Z and 0-9)(1=stored)
 "                +---------------------- Save marks for X files
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable vim-plug                                                            "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable vim-plug                                                         "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Specify a directory for plugins
 " Plugins must be downloaded under the specified directory.
