@@ -36,7 +36,7 @@ set visualbell        " No sounds
 
 " Set the window size
 set lines       =30   " Set height
-set columns     =85   " Set width
+set columns     =100  " Set width
 set numberwidth =4    " Add X spaces by number line
 
 " Setup tabs
@@ -64,7 +64,7 @@ autocmd BufReadPost *
     \ endif
 
 " Make python nicer
-set textwidth   =72   " Wrap text for an 80 column terminal
+set textwidth   =96   " Wrap text for an 80 column terminal
 set autoindent        " Not sure if this works correctly in Big Sur
 set fileformat  =unix " Store file in unix format to avoid conversion issues
 
@@ -97,6 +97,10 @@ call plug#begin('~/.vim/plugged')
 " Uncomment the next line(s)
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
+Plug 'gruvbox-community/gruvbox'
 
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
+
+colorscheme gruvbox
+
