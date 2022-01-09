@@ -2,6 +2,8 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
+" Gruvbox colors are still off - verify after OS reinstall                "
+"                                                                         "
 " Last update 01/09/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
