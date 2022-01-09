@@ -1,4 +1,4 @@
-# Last update 08/15/21
+# Last update 01/09/22
 # Issues: I'm not sure I want rbenv running automatically
 
 # Source the .bashrc
@@ -11,9 +11,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Execute a shell script from any directory 
 export PATH="$HOME/bin:$PATH"
-
-# Set PATH for Homebrew Python 
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Set PATH for Git in homebrew
 export PATH="usr/local/opt/git/bin:$PATH" 
