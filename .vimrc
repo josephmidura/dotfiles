@@ -7,6 +7,12 @@
 
 set nocompatible      " Use vim rather than vi settings
 
+" Enable italics
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+
+highlight Comment cterm=italic
+
 " Make it look nice
 set scrolloff   =3    " Keep cursor X lines away from top/bottom
 set cmdheight   =2    " Make the command line X lines high
@@ -17,7 +23,7 @@ set laststatus  =2    " Enable the status line always
 set t_Co=256
 
 " Colorscheme fallback if nothing else installed
-colorscheme elflord   " My favorite. Thanks S
+colorscheme elflord   " My favorite.
 
 " Improve Searching
 set hlsearch          " Highlight the search term
@@ -102,5 +108,7 @@ Plug 'gruvbox-community/gruvbox'
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
 
+"let g:gruvbox_italics=1 "Enable italics in gruvbox 
 colorscheme gruvbox
+highlight Comment cterm=italic
 
