@@ -23,7 +23,7 @@ set laststatus  =2    " Enable the status line always
 set t_Co=256
 
 " Colorscheme fallback if nothing else installed
-colorscheme elflord   " My favorite.
+colorscheme elflord   " My favorite
 
 " Improve Searching
 set hlsearch          " Highlight the search term
@@ -71,7 +71,7 @@ autocmd BufReadPost *
 
 " Make python nicer
 set textwidth   =96   " Wrap text for an 80 column terminal
-set autoindent        " Not sure if this works correctly in Big Sur
+set autoindent        " Autoindent on
 set fileformat  =unix " Store file in unix format to avoid conversion issues
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -108,7 +108,7 @@ Plug 'gruvbox-community/gruvbox'
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
 
-"let g:gruvbox_italics=1 "Enable italics in gruvbox 
+" Enable grubox colors
 colorscheme gruvbox
 
 " Enable cterm italics support. This must be after colorschme is loaded
