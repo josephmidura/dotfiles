@@ -2,16 +2,14 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
-" Last update 01/07/22                                                    "
+" Last update 01/09/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
 
-" Enable italics
+" Enable italics support
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-
-highlight Comment cterm=italic
 
 " Make it look nice
 set scrolloff   =3    " Keep cursor X lines away from top/bottom
@@ -110,5 +108,7 @@ call plug#end()
 
 "let g:gruvbox_italics=1 "Enable italics in gruvbox 
 colorscheme gruvbox
+
+" Enable cterm italics support. This must be after colorschme is loaded
 highlight Comment cterm=italic
 
