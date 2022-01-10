@@ -4,20 +4,14 @@
 "                                                                         "
 " Gruvbox colors are still off - verify after OS reinstall                "
 "                                                                         "
-" Last update 01/09/22                                                    "
+" Last update 01/10/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
 
-" Enable italics support
+" Enable italics support in terminal
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-
-" Make it look nice
-set scrolloff   =3    " Keep cursor X lines away from top/bottom
-set cmdheight   =2    " Make the command line X lines high
-set laststatus  =2    " Enable the status line always
-"set showmatch         " Briefly jump to matching brace on inserted
 
 " Enable 256 colors
 set t_Co=256
@@ -39,6 +33,12 @@ set number            " Line numbers on
 set ruler             " Turn on ruler
 syntax on             " Syntax highlighting
 set visualbell        " No sounds
+
+" Make it look nice
+set scrolloff   =3    " Keep cursor X lines away from top/bottom
+set cmdheight   =2    " Make the command line X lines high
+set laststatus  =2    " Enable the status line always
+"set showmatch         " Briefly jump to matching brace on inserted
 
 " Set the window size
 set lines       =30   " Set height
