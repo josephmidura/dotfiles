@@ -97,19 +97,19 @@ set viminfo='500,f1,<1000,:100,h,%
 " Specify a directory for plugins
 " Plugins must be downloaded under the specified directory.
 " Uncomment the next line
-call plug#begin('~/.vim/plugged') 
+#call plug#begin('~/.vim/plugged') 
 
 " Shorthand notation for list of plugins
 " Uncomment the next line(s)
-Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'
-Plug 'gruvbox-community/gruvbox'
+#Plug 'itchyny/lightline.vim'
+#Plug 'preservim/nerdtree'
+#Plug 'gruvbox-community/gruvbox'
 
 " Initialize plugin system - plugins become visible to vim after this call
-call plug#end()
+#call plug#end()
 
 " Enable grubox colors
-colorscheme gruvbox
+#colorscheme gruvbox
 
 " Enable cterm italics support. This must be after colorschme is loaded
 highlight Comment cterm=italic
