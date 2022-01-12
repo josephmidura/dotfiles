@@ -1,4 +1,4 @@
-# Last update 1-5-22
+# Last update 01-11-22
 
 # ---------------------------------
 # Some random aliases
@@ -46,8 +46,8 @@ alias jn='jupyter notebook'         # Start jupyter notebook
 # ---------------------------------
 # Terminal aliases
 # ---------------------------------
-alias ls='ls -GFh'                  # Add colors,symbol,readability
-alias la='ls -At'                   # Show all, date, symbol,readable
+alias ls='ls -GFh'                  # Add colors, symbol, readability
+alias la='ls -At'                   # Show all, date, symbol, readable
 alias lx='ls -x'                    # Sort by extension type 
 alias ll='ls -l -a'                 # Long list 
 alias lt='ls -l -t'                 # Long list sorted by date
@@ -63,7 +63,6 @@ alias x='exit'                      # Exit
 # ---------------------------------
 alias cp='cp -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask for permission 
-#alias cat='cat -n'                  # Line numbers in cat
 alias sbash='source ~/.bashrc'      # Re-source this file
 alias svim='source ~/.vimrc'        # Source vimrc
 alias grep='grep --color'           # Colorize grep results
