@@ -1,4 +1,4 @@
-# Last update 01-11-22
+# Last update 01-12-22
 #
 # Issues - nvm stuff belongs in bash_profile
 
@@ -22,7 +22,7 @@ else
 fi
 
 # Set number of files in bash_history
-HISTFILESIZE=5000
+HISTFILESIZE=2500
 
 # Remove duplicate history entries (Sometimes I want the duplicates)
 #export HISTCONTROL=ignoreboth:erasedups
@@ -42,9 +42,9 @@ export CC=gcc
 # ---------------------------------
 # Running nvm
 # ---------------------------------
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ---------------------------------
 # Set terminal colors
@@ -54,7 +54,7 @@ export CC=gcc
 export CLICOLOR=1
 
 # Terminal colors 
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
 #export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Remove duplicate history entries
