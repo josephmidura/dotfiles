@@ -4,7 +4,7 @@
 "                                                                         "
 " Gruvbox colors are still off - verify after OS reinstall                "
 "                                                                         "
-" Last update 01/10/22                                                    "
+" Last update 01/14/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
@@ -94,13 +94,13 @@ set viminfo='500,f1,<1000,:100,h,%
 " Enable vim-plug                                                         "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Specify a directory for plugins
+" Specify a directory for plugins i.e.~/.vim/plugged
 " Plugins must be downloaded under the specified directory.
-" Uncomment the next line
-"call plug#begin('~/.vim/plugged') 
 
-" Shorthand notation for list of plugins
-" Uncomment the next line(s)
+" Uncomment to enable vim plug
+"call plug#begin('~/.vim/plugged') " Uncomment to enable vim plug
+
+" Shorthand notation for list of plugins.
 "Plug 'itchyny/lightline.vim'
 "Plug 'preservim/nerdtree'
 "Plug 'gruvbox-community/gruvbox'
@@ -108,7 +108,7 @@ set viminfo='500,f1,<1000,:100,h,%
 " Initialize plugin system - plugins become visible to vim after this call
 "call plug#end()
 
-" Enable grubox colors
+" Enable gruvbox colors
 "colorscheme gruvbox
 
 " Enable cterm italics support. This must be after colorschme is loaded
