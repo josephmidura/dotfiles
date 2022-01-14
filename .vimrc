@@ -94,11 +94,11 @@ set viminfo='500,f1,<1000,:100,h,%
 " Enable vim-plug                                                         "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Specify a directory for plugins i.e.~/.vim/plugged
+" Specify a directory for plugins i.e. ~/.vim/plugged
 " Plugins must be downloaded under the specified directory.
 
 " Uncomment to enable vim plug
-"call plug#begin('~/.vim/plugged') " Uncomment to enable vim plug
+"call plug#begin('~/.vim/plugged')
 
 " Shorthand notation for list of plugins.
 "Plug 'itchyny/lightline.vim'
