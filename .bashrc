@@ -27,6 +27,9 @@ HISTFILESIZE=2500
 # Remove duplicate history entries (Sometimes I want the duplicates)
 #export HISTCONTROL=ignoreboth:erasedups
 
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
 # Display commands with date and time
 export HISTTIMEFORMAT='%F %T'
 
