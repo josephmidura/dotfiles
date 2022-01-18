@@ -1,4 +1,4 @@
-# Last update 01-12-22
+# Last update 01-18-22
 #
 # Issues - nvm stuff belongs in bash_profile
 
@@ -31,7 +31,7 @@ HISTFILESIZE=2500
 shopt -s histappend
 
 # Display commands with date and time
-export HISTTIMEFORMAT='%F %T'
+export HISTTIMEFORMAT='%F %T '
 
 # Always us vi. Use this as an alternative to 'set -0 vi' (bash only)
 export editor=vi
