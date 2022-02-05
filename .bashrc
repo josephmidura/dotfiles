@@ -1,4 +1,4 @@
-# Last update 01-18-22
+# Last update 02-05-22
 #
 # Issues - nvm stuff belongs in bash_profile
 
@@ -20,6 +20,9 @@ then
 else
     PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 fi
+
+# Enable 256 color support in gruvbox
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh"
 
 # Set number of files in bash_history
 HISTFILESIZE=2500
@@ -64,7 +67,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
 export HISTCONTROL=ignoreboth:erasedups
 
 # Set date and time in history
-export HISTTIMEFORMAT='%F %T'
+export HISTTIMEFORMAT='%F %T '
 
 # Colorize man output with less
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
