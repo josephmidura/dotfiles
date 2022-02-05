@@ -22,7 +22,7 @@ else
 fi
 
 # Enable 256 color support in gruvbox
-source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh"
+source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
 
 # Set number of files in bash_history
 HISTFILESIZE=2500
