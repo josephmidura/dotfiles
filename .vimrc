@@ -7,15 +7,20 @@
 
 set nocompatible      " Use vim rather than vi settings
 
-" Enable italics support in terminal
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
-
-" Enable 256 colors
-set t_Co=256
+" Set termguicolors for color schemes that need it
+" Linux has termguicolors but it ruins the colors.
+if has('termguicolors') && (has('mac') || has('win32'))
+    set termguicolors
+endif
 
 " Colorscheme fallback if nothing else installed
 colorscheme elflord   " My favorite
+set background=dark   " Use dark backgrounds
+set t_Co=256          " Enable 256 colors
+
+" Enable italics support in terminal
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 
 " Improve Searching
 set hlsearch          " Highlight the search term
