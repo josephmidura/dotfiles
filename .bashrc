@@ -16,9 +16,9 @@ fi
 # Color prompt and make root red (w vs W changes pwd options)
 if [ `id -u` = 0 ]
 then
-    PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] "
+    PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] " # Red prompt
 else
-    PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
+    PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " # Normal
 fi
 
 # Enable 256 color support in gruvbox
