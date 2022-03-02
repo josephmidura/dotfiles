@@ -1,4 +1,4 @@
-# Last update 01/13/22
+# Last update 03/02/22
 # Issues: I'm not sure I want rbenv running automatically
 
 # Source the .bashrc
@@ -11,6 +11,10 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Execute a shell script from any directory 
 export PATH="$HOME/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_comple    tion
 
 # For Asdf and Python
 . /usr/local/opt/asdf/libexec/asdf.sh
