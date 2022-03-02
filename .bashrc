@@ -30,6 +30,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# ---------------------------------
+# Set history settings
+# ---------------------------------
+
 # Set number of files in bash_history
 HISTFILESIZE=2500
 
@@ -39,8 +43,12 @@ HISTFILESIZE=2500
 # When the shell exits, append to the history file instead of overwriting it
 shopt -s histappend
 
-# Display commands with date and time
+# Set date and time in history
 export HISTTIMEFORMAT='%F %T '
+
+# ---------------------------------
+# Misc settings
+# ---------------------------------
 
 # Always us vi. Use this as an alternative to 'set -0 vi' (bash only)
 export editor=vi
@@ -61,12 +69,6 @@ export CLICOLOR=1
 # Terminal colors 
 #export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
-# Remove duplicate history entries
-export HISTCONTROL=ignoreboth:erasedups
-
-# Set date and time in history
-export HISTTIMEFORMAT='%F %T '
 
 # Colorize man output with less
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
