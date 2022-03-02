@@ -1,6 +1,4 @@
-# Last update 02-05-22
-#
-# Issues - nvm stuff belongs in bash_profile
+# Last update 03-02-22
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -46,13 +44,6 @@ export HOMEBREW_NO_ANALYTICS=1
 export CC=gcc
 
 # ---------------------------------
-# Running nvm
-# ---------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# ---------------------------------
 # Set terminal colors
 # ---------------------------------
 
@@ -60,8 +51,8 @@ export NVM_DIR="$HOME/.nvm"
 export CLICOLOR=1
 
 # Terminal colors 
-export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
-#export LSCOLORS=GxFxCxDxBxegedabagaced
+#export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Remove duplicate history entries
 export HISTCONTROL=ignoreboth:erasedups
