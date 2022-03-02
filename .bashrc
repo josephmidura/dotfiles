@@ -22,6 +22,14 @@ fi
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
 
+# ---------------------------------
+# Enable nvm
+# ---------------------------------
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Set number of files in bash_history
 HISTFILESIZE=2500
 
