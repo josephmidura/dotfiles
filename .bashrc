@@ -1,4 +1,4 @@
-# Last update 03-02-22
+# Last update 03-12-22
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -11,13 +11,8 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-# Color prompt and make root red (w vs W changes pwd options)
-if [ `id -u` = 0 ]
-then
-    PS1="\[\e[33;1;41m\][\u] \w \$\[\e[0m\] " # Red prompt
-else
-    PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " # Normal
-fi
+# Prompt
+PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
