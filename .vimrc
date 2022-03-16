@@ -97,22 +97,28 @@ set viminfo='500,f1,<1000,:100,h,%
 " Enable vim-plug                                                         "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Commands
+" PlugUpgrade - Update vim-plug itself
+" PlugStatus  - Check status of plugins
+" PlugUpdate  - Update plugins
+" See more here: https://github.com/junegunn/vim-plug
+
 " Specify a directory for plugins i.e. ~/.vim/plugged
 " Plugins must be downloaded under the specified directory.
 
 " Uncomment to enable vim plug
-"call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Shorthand notation for list of plugins.
-"Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 "Plug 'preservim/nerdtree'
-"Plug 'gruvbox-community/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 
 " Initialize plugin system - plugins become visible to vim after this call
-"call plug#end()
+call plug#end()
 
 " Enable gruvbox colors
-"colorscheme gruvbox
+colorscheme gruvbox
 
 " Enable cterm italics support. This must be after colorschme is loaded
 highlight Comment cterm=italic
