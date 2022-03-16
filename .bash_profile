@@ -1,4 +1,4 @@
-# Last update 03/02/22
+# Last update 03/16/22
 # Issues: I'm not sure I want rbenv running automatically
 
 # Source the .bashrc
@@ -16,7 +16,7 @@ export PATH="$HOME/bin:$PATH"
 . /usr/local/opt/asdf/libexec/asdf.sh
 
 # Use personal AWS account as default
-export AWS_PROFILE=user1
+export AWS_PROFILE=personal
 
 # Set PATH for Git in homebrew
 export PATH="usr/local/opt/git/bin:$PATH" 
