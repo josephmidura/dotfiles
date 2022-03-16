@@ -15,6 +15,9 @@ export PATH="$HOME/bin:$PATH"
 # For Asdf and Python
 . /usr/local/opt/asdf/libexec/asdf.sh
 
+# Use personal AWS account as default
+export AWS_PROFILE=user1
+
 # Set PATH for Git in homebrew
 export PATH="usr/local/opt/git/bin:$PATH" 
 
@@ -30,3 +33,7 @@ export PATH=$GOPATH/bin:$PATH
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
+FSLDIR=/usr/local/fsl
+. ${FSLDIR}/etc/fslconf/fsl.sh
+PATH=${FSLDIR}/bin:${PATH}
+export FSLDIR PATH
