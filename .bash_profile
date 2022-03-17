@@ -1,4 +1,4 @@
-# Last update 03/16/22
+# Last update 03/17/22
 # Issues: I'm not sure I want rbenv running automatically
 
 # Source the .bashrc
@@ -33,7 +33,3 @@ export PATH=$GOPATH/bin:$PATH
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
-FSLDIR=/usr/local/fsl
-. ${FSLDIR}/etc/fslconf/fsl.sh
-PATH=${FSLDIR}/bin:${PATH}
-export FSLDIR PATH
