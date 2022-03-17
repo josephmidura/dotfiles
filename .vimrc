@@ -2,7 +2,7 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
-" Last update 02/05/22                                                    "
+" Last update 03/17/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
@@ -42,6 +42,7 @@ set scrolloff   =3    " Keep cursor X lines away from top/bottom
 set cmdheight   =2    " Make the command line X lines high
 set laststatus  =2    " Enable the status line always
 "set showmatch         " Briefly jump to matching brace on inserted
+"set nowrap            " Text doesn't wrap by default
 
 " Set the window size
 set lines       =30   " Set height
