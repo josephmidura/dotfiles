@@ -2,7 +2,7 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
-" Last update 03/17/22                                                    "
+" Last update 03/18/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
@@ -114,6 +114,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 "Plug 'preservim/nerdtree'
 Plug 'gruvbox-community/gruvbox'
+Plug 'leafgarland/typescript-vim'
 
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
