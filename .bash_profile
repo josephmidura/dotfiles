@@ -1,5 +1,7 @@
-# Last update 03/17/22
+# Last update 04/15/22
 # Issues: I'm not sure I want rbenv running automatically
+
+# Reminder - AWS default profile is defined here
 
 # Source the .bashrc
 if [ -f ~/.bashrc ]; then
