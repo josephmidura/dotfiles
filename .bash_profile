@@ -1,5 +1,4 @@
-# Last update 04/15/22
-# Issues: I'm not sure I want rbenv running automatically
+# Last update 05/07/22
 
 # Reminder - AWS default profile is defined here
 
@@ -15,7 +14,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH="$HOME/bin:$PATH"
 
 # For Asdf and Python
-. /usr/local/opt/asdf/libexec/asdf.sh
+#. /usr/local/opt/asdf/libexec/asdf.sh
 
 # Use personal AWS account as default
 export AWS_PROFILE=personal
