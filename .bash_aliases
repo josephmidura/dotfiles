@@ -1,4 +1,4 @@
-# Last update 01-11-22
+# Last update 06-14-22
 
 # ---------------------------------
 # Some random aliases
@@ -57,6 +57,7 @@ alias ...='cd ../..'                # Up two
 alias cd~='cd ~'                    # Fix a common error
 alias rm='rm -i'                    # Ask for permission 
 alias x='exit'                      # Exit 
+alias du='du -sh'                   # Human readable, no subdirectories
 
 # ---------------------------------
 # Moving and finding
