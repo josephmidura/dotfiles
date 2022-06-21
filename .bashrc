@@ -1,4 +1,4 @@
-# Last update 03-12-22
+# Last update 06-21-22
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
@@ -45,8 +45,11 @@ export HISTTIMEFORMAT='%F %T '
 # Misc settings
 # ---------------------------------
 
-# Always us vi. Use this as an alternative to 'set -0 vi' (bash only)
+# Always us vi.
 export editor=vi
+
+# Use vim keybindings
+set -o vi
 
 # Turn off Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
@@ -62,8 +65,8 @@ export CC=gcc
 export CLICOLOR=1
 
 # Terminal colors 
-#export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
+#export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Colorize man output with less
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
