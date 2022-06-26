@@ -1,10 +1,10 @@
-# Last update 06-21-22
+# Last update 06-26-22
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
 
-# Remind me what version I'm using
-echo -e This is Bash ${BASH_VERSION%.*}
+# Play a message when I re source this file.
+echo -e Welcome to Bash ${BASH_VERSION%.*}
 
 # Source the aliases file
 if [ -f ~/.bash_aliases ]; then
