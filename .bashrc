@@ -1,4 +1,7 @@
-# Last update 06-26-22
+# Last update 06-30-22
+
+# Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
+# I also alias ls -G
 
 # Determine whether this is the login script
 #echo Hello from .bashrc. I load after bash_profile
