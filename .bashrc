@@ -1,4 +1,4 @@
-# Last update 06-30-22
+# Last update 07-03-22
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
@@ -68,8 +68,8 @@ export CC=gcc
 export CLICOLOR=1
 
 # Terminal colors 
-export LSCOLORS=ExFxBxDxCxegedabagacad   # Favorite
-#export LSCOLORS=GxFxCxDxBxegedabagaced
+#export LSCOLORS=ExFxBxDxCxegedabagacad   #
+export LSCOLORS=GxFxCxDxBxegedabagaced    # Easier to see on dark screen
 
 # Colorize man output with less
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
