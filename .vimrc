@@ -2,7 +2,7 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
-" Last update 03/18/22                                                    "
+" Last update 07/31/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
@@ -74,7 +74,7 @@ autocmd BufReadPost *
     \ endif
 
 " Make python nicer
-set textwidth   =96   " Wrap text for an 80 column terminal
+set textwidth   =96   " Wrap text for an 80 column terminal (I like 96 also)
 set autoindent        " Autoindent on
 set fileformat  =unix " Store file in unix format to avoid conversion issues
 
@@ -111,10 +111,10 @@ set viminfo='500,f1,<1000,:100,h,%
 call plug#begin('~/.vim/plugged')
 
 " Shorthand notation for list of plugins.
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 "Plug 'preservim/nerdtree'
-Plug 'gruvbox-community/gruvbox'
-Plug 'leafgarland/typescript-vim'
+"Plug 'gruvbox-community/gruvbox'
+"Plug 'leafgarland/typescript-vim'
 
 " Initialize plugin system - plugins become visible to vim after this call
 call plug#end()
