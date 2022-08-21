@@ -1,9 +1,11 @@
-# Last update 06-14-22
+# Last update 08-21-22
+
+# Must be invoked as super user
+alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 
 # ---------------------------------
 # Some random aliases
 # ---------------------------------
-alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
 alias bejs='bundle exec jekyll serve'
 alias h='heroku'                    # Less typing
 alias sql='sqlite3'                 # Abbreviate
