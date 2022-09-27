@@ -28,6 +28,7 @@ alias nq='networkQuality'           # Network Quality tool in Monterey
 alias gitc='git commit -s -m'       # Sign and message for commits
 alias gita='git add -p'             # Always use this flag 
 alias gb='git branch'
+alias gs='git status'
 
 # ---------------------------------
 # Vim aliases
