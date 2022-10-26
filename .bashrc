@@ -33,7 +33,7 @@ export NVM_DIR="$HOME/.nvm"
 # ---------------------------------
 
 # Set number of files in bash_history
-HISTFILESIZE=2500
+HISTFILESIZE=5000
 
 # Remove duplicate history entries (Sometimes I want the duplicates)
 #export HISTCONTROL=ignoreboth:erasedups
