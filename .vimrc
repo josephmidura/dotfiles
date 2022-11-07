@@ -2,7 +2,7 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
-" Last update 07/31/22                                                    "
+" Last update 11/07/22                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
@@ -102,6 +102,8 @@ set viminfo='500,f1,<1000,:100,h,%
 " PlugUpgrade - Update vim-plug itself
 " PlugStatus  - Check status of plugins
 " PlugUpdate  - Update plugins
+" PlugDiff    - Review changes
+" PlugClean   - Detect and remove undeclare plugins
 " See more here: https://github.com/junegunn/vim-plug
 
 " Specify a directory for plugins i.e. ~/.vim/plugged
@@ -111,9 +113,9 @@ set viminfo='500,f1,<1000,:100,h,%
 call plug#begin('~/.vim/plugged')
 
 " Shorthand notation for list of plugins.
-" Plug 'itchyny/lightline.vim'
+ Plug 'itchyny/lightline.vim'
 "Plug 'preservim/nerdtree'
-"Plug 'gruvbox-community/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 "Plug 'leafgarland/typescript-vim'
 
 " Initialize plugin system - plugins become visible to vim after this call
