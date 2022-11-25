@@ -1,4 +1,5 @@
-# Last update 08-21-22
+# Last update 11-25-22
+# Do I need bash_aliases.local?
 
 # Must be invoked as super user
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
