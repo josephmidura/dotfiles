@@ -7,7 +7,7 @@
 #echo Hello from .bashrc. I load after bash_profile
 
 # Play a message when I re source this file.
-echo -e Welcome to Bash ${BASH_VERSION%.*}
+echo -e Welcome to Bash ${BASH_VERSION%.*}. Time to try out zsh?
 
 # Source the aliases file
 if [ -f ~/.bash_aliases ]; then
