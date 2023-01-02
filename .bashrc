@@ -1,4 +1,4 @@
-# Last update 07-03-22
+# Last update 01-02-22
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
