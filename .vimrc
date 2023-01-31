@@ -9,9 +9,13 @@ set nocompatible      " Use vim rather than vi settings
 
 " Set termguicolors for color schemes that need it
 " Linux has termguicolors but it ruins the colors.
-if has('termguicolors') && (has('mac') || has('win32'))
-    set termguicolors
-endif
+"
+" WARNING: termguicolors needs to be OFF for MacOS > 12.6.2
+"if has('termguicolors') && (has('mac') || has('win32'))
+"    set termguicolors
+"endif
+
+set notermguicolors
 
 " Colorscheme fallback if nothing else installed
 colorscheme elflord   " My favorite
@@ -103,7 +107,7 @@ set viminfo='500,f1,<1000,:100,h,%
 " PlugStatus  - Check status of plugins
 " PlugUpdate  - Update plugins
 " PlugDiff    - Review changes
-" PlugClean   - Detect and remove undeclare plugins
+" PlugClean   - Detect and remove undeclared plugins
 " See more here: https://github.com/junegunn/vim-plug
 
 " Specify a directory for plugins i.e. ~/.vim/plugged
