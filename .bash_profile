@@ -1,4 +1,4 @@
-# Last update 05/07/22
+# Last update 02/01/23
 
 # Reminder - AWS default profile is defined here
 
@@ -20,7 +20,7 @@ export PATH="$HOME/bin:$PATH"
 export AWS_PROFILE=personal
 
 # Set PATH for Git in homebrew
-export PATH="usr/local/opt/git/bin:$PATH" 
+#export PATH="usr/local/opt/git/bin:$PATH" 
 
 # Run rbenv
 #eval "$(rbenv init -)"
@@ -29,7 +29,7 @@ export PATH="usr/local/opt/git/bin:$PATH"
 #export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
 # Set GO PATH
-export PATH=$GOPATH/bin:$PATH
+#export PATH=$GOPATH/bin:$PATH
 
 # This should be the last line of the file - for local customization
 # Don't make edits below this
