@@ -2,7 +2,7 @@
 " Make vim work better.                                                   "
 " Formatted for 80 character terminal                                     "
 "                                                                         "
-" Last update 01/31/23                                                    "
+" Last update 02/01/23                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible      " Use vim rather than vi settings
@@ -126,7 +126,7 @@ Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 " Enable supplemental colorscheme
-colorscheme gruvbox
+colorscheme gruvbox                 " Line in bashrd supports gruvbox
 
 " Enable cterm italics support. This must be after colorschme is loaded
 highlight Comment cterm=italic
