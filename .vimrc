@@ -126,7 +126,7 @@ Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 " Uncomment if vim plug colorscheme installed
-colorscheme gruvbox i  " Line in bashrc supports gruvbox colors
+colorscheme gruvbox    " Line in bashrc supports gruvbox colors
 
 " Enable cterm italics support. This must be after colorschme is loaded
 highlight Comment cterm=italic
