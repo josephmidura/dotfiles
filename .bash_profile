@@ -1,8 +1,10 @@
-# Last update 02/01/23
+# Last update 02/02/23
 
 # Reminder - AWS default profile is defined here
 
-# Source the .bashrc
+echo Hello from .bash_profile
+
+# Source the .bashrc, if it exists
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
@@ -17,7 +19,7 @@ export PATH="$HOME/bin:$PATH"
 #. /usr/local/opt/asdf/libexec/asdf.sh
 
 # Use personal AWS account as default
-export AWS_PROFILE=personal
+#export AWS_PROFILE=personal
 
 # Set PATH for Git in homebrew
 #export PATH="usr/local/opt/git/bin:$PATH" 

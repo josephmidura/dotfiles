@@ -1,15 +1,15 @@
-# Last update 01-02-22
+# Last update 02-02-23
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
 
 # Determine whether this is the login script
-#echo Hello from .bashrc. I load after bash_profile
+echo Hello from .bashrc
 
-# Play a message when I re source this file.
-echo -e Welcome to Bash ${BASH_VERSION%.*}. Time to try out zsh?
+# Play a message when I re-source this file.
+echo -e Welcome to Bash ${BASH_VERSION%.*}.
 
-# Source the aliases file
+# Source the aliases file, if it exists
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
