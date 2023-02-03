@@ -2,7 +2,7 @@
 " Make vim work better.                                                   '
 " Formatted for 80 character terminal                                     '
 "                                                                         '
-" Last update 02/02/23                                                    '
+" Last update 02/03/23                                                    '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible       " Use vim rather than vi settings
@@ -11,7 +11,7 @@ set nocompatible       " Use vim rather than vi settings
 " Linux has termguicolors but it ruins the colors.
 
 " WARNING: termguicolors needs to be OFF (default) for MacOS > 12.6.2 
-" or gruvbox will not work
+" or colorschemes will not work
 
 "if has('termguicolors') && (has('mac') || has('win32'))
 "    set termguicolors
@@ -36,7 +36,7 @@ set smartcase          " Make search case sensitive if capital present
 " Apparently filetype needs to be off for some plugins
 filetype on            " Automatic filetype detection
 set number             " Line numbers on
-"set relativenumber     " Set numbers relaative to current line
+"set relativenumber     " Set numbers relative to current line
 set ruler              " Turn on ruler
 syntax on              " Syntax highlighting
 set visualbell         " No sounds
