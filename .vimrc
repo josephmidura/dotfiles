@@ -19,7 +19,7 @@ set nocompatible       " Use vim rather than vi settings
 
 " A few basic settings
 colorscheme elflord    " Colorscheme fallback if nothing else installed
-set background=dark    " Use dark backgrounds
+set background   =dark " Use dark background
 set t_Co         =256  " Enable 256 colors
 " Apparently filetype needs to be off for some plugins
 filetype on            " Automatic filetype detection
