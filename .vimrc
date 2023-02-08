@@ -2,7 +2,7 @@
 " Make vim work better.                                                   '
 " Formatted for 80 character terminal                                     '
 "                                                                         '
-" Last update 02/03/23                                                    '
+" Last update 02/08/23                                                    '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible       " Use vim rather than vi settings
@@ -17,10 +17,11 @@ set nocompatible       " Use vim rather than vi settings
 "    set termguicolors
 "endif
 
-" Colorscheme fallback if nothing else installed
-colorscheme elflord    " My favorite
+" A few basic settings
+colorscheme elflord    " Colorscheme fallback if nothing else installed
 set background=dark    " Use dark backgrounds
 set t_Co=256           " Enable 256 colors
+set colorcolumn=90     " Warn me when I'm near the end of the window
 
 " Enable italics support in terminal
 let &t_ZH="\e[3m"
