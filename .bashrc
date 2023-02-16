@@ -1,4 +1,4 @@
-# Last update 02-02-23
+# Last update 02-16-23
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
@@ -24,9 +24,15 @@ source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
 # Enable nvm
 # ---------------------------------
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ---------------------------------
+# Enable asdf, as installed by homebrew
+# ---------------------------------
+
+#[ -f ".bashrc.local" ] && source ".bashrc.local"
 
 # ---------------------------------
 # Set history settings
@@ -130,4 +136,4 @@ txtrst='\e[0m'     # Text Reset
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 # ---------------------------------
-[ -f ".bashrc.local" ] && source ".bashrc.local"
+
