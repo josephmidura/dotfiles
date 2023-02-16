@@ -1,0 +1,8 @@
+# Last update 2.16.23
+# This file, combined with .tool-versions, configures asdf
+#
+# Global defaults are managed in $HOME/.tool-versions
+#
+#
+#
+# See the docs for explanations: https://asdf-vm.com/manage/configuration.html
