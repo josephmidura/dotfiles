@@ -32,7 +32,7 @@ source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
 # Enable asdf, as installed by homebrew
 # ---------------------------------
 
-#[ -f ".bashrc.local" ] && source ".bashrc.local"
+
 
 # ---------------------------------
 # Set history settings
@@ -136,4 +136,4 @@ txtrst='\e[0m'     # Text Reset
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 # ---------------------------------
-
+[ -f ".bashrc.local" ] && source ".bashrc.local"
