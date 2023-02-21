@@ -1,14 +1,14 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Make vim work better.                                                   '
-" Formatted for 80 character terminal                                     '
-"                                                                         '
-" Last update 02/08/23                                                    '
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Make vim work better.                                               '
+" Formatted for 80 character terminal - end line at 71 or 72          '
+"                                                                     '
+" Last update 02/08/23                                                '
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible       " Use vim rather than vi settings
 
 " Set termguicolors for color schemes that need it
-" Linux has termguicolors but it ruins the colors.
+" Linux has termguicolors but it ruins the colors.                             
 
 " WARNING: termguicolors needs to be OFF (default) for MacOS > 12.6.2 
 " or colorschemes will not work
@@ -64,13 +64,13 @@ set scrolloff    =3    " Start scrolling when X lines away from margins
 set sidescrolloff=15   " I think one of my other options messes this up 
 set sidescroll   =1    " 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Jump to the last known cursor position. Don't do it when the position   '
-" is invalid or inside an event handler (happens when dropping a file     '
-" on gvim).                                                               '
-"                                                                         '
-" Also don't do it when the mark is in the first line (default position)  '
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Jump to last known cursor position. Don't do it when the position   '
+" is invalid or inside an event handler (happens when dropping a file '
+" on gvim).                                                           '
+"                                                                     '
+" Also don't do it when the mark is in the first line (default        '
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufReadPost *
     \ if line("'\"") >1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
@@ -81,25 +81,26 @@ set textwidth    =96   " Wrap text for an 80 column terminal (or 96)
 set autoindent         " Autoindent on
 set fileformat   =unix " Store in unix format to avoid conversion issues
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set viminfo file                                                        '
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set viminfo file                                                    '
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set viminfo='500,f1,<1000,:100,h,%
 "            |   |  |     |    | |
 "            |   |  |     |    | |
-"            |   |  |     |    | +- Save and restore the buffer list(if a
-"            |   |  |     |    |    file is not specified to open on the
-"            |   |  |     |    |    command line
+"            |   |  |     |    | +- Save and restore the buffer list
+"            |   |  |     |    |    (if a file is not specified to open
+"            |   |  |     |    |    on the command line
 "            |   |  |     |    +--- Disable hlsearch when starting
-"            |   |  |     +-------- Save X lines of command line history
-"            |   |  +-------------- Use a maximimum of X lines per register
-"            |   +----------------- Save global marks(A-Z and 0-9)(1=stored)
+"            |   |  |     +-------- Save X lines of command history
+"            |   |  +-------------- Use max of X lines per register
+"            |   +----------------- Save global marks (A-Z and 0-9)
+"            |                      (1=stored)
 "            +--------------------- Save marks for X files
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable vim-plug                                                         '
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable vim-plug                                                     '
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Commands
 " PlugUpgrade - Update vim-plug itself
@@ -121,12 +122,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 "Plug 'leafgarland/typescript-vim'
 
-" Initialize plugin system - plugins become visible to vim after this call
+" Initialize plugin system - plugins become visible after this call
 call plug#end()
 
 " Uncomment if vim plug colorscheme installed
 colorscheme gruvbox    " Line in bashrc supports gruvbox colors
 
-" Enable cterm italics support. This must be after colorschme is loaded
+" Enable cterm italics. This must be after colorschme is loaded
 highlight Comment cterm=italic
 
