@@ -1,10 +1,10 @@
-# Last update 02-16-23
+# Last update 02-23-23
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
 
 # Determine whether this is the login script
-echo Hello from .bashrc
+#echo Hello from .bashrc
 
 # Play a message when I re-source this file.
 echo -e Welcome to Bash ${BASH_VERSION%.*}.
