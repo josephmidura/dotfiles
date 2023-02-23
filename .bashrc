@@ -9,6 +9,9 @@ echo Hello from .bashrc
 # Play a message when I re-source this file.
 echo -e Welcome to Bash ${BASH_VERSION%.*}.
 
+# List some mac specs
+sw_vers
+
 # Source the aliases file, if it exists
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
