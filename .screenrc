@@ -1,0 +1,2 @@
+# status line
+hardstatus alwayslastline "%{=b}%{G}%w"
