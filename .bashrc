@@ -1,4 +1,4 @@
-# Last update 02-24-23
+# Last update 02-25-23
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
@@ -50,12 +50,20 @@ HISTFILESIZE=5000
 # When the shell exits, append to the history file instead of overwriting it
 shopt -s histappend
 
+shopt -s histverify # Allow edits to history substitution
+
 # Set date and time in history
 export HISTTIMEFORMAT='%F %T '
 
 # ---------------------------------
-# Misc settings
+# Shell
 # ---------------------------------
+
+# behavior
+shopt -s checkhash               # build a hash of the commands in PATH, look there first, in PATH after
+shopt -s checkwinsize            # automatically update the values of LINES and COLUMNS
+shopt -s no_empty_cmd_completion # don't look in PATH if I haven't typed anything
+shopt -s progcomp                # programmable completion (should be enabled by default)
 
 # Always us vi.
 export editor=vi
