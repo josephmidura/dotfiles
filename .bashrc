@@ -1,4 +1,8 @@
+
 # Last update 02-25-23
+
+
+
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G
@@ -18,7 +22,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Prompt
-PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[35m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
+PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
