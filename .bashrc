@@ -1,11 +1,7 @@
-
-# Last update 02-25-23
-
-
-
+# Last update 03-13-23
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
-# I also alias ls -G
+# I also alias ls -G elsewhere
 
 # Determine whether this is the login script
 #echo Hello from .bashrc
@@ -14,7 +10,7 @@
 echo -e Welcome to Bash ${BASH_VERSION%.*}.
 
 # List some mac specs
-sw_vers
+#sw_vers
 
 # Source the aliases file, if it exists
 if [ -f ~/.bash_aliases ]; then
@@ -34,12 +30,6 @@ source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# ---------------------------------
-# Enable asdf, as installed by homebrew
-# ---------------------------------
-
-
 
 # ---------------------------------
 # Set history settings
@@ -63,13 +53,13 @@ export HISTTIMEFORMAT='%F %T '
 # Shell
 # ---------------------------------
 
-# behavior
-shopt -s checkhash               # build a hash of the commands in PATH, look there first, in PATH after
-shopt -s checkwinsize            # automatically update the values of LINES and COLUMNS
-shopt -s no_empty_cmd_completion # don't look in PATH if I haven't typed anything
-shopt -s progcomp                # programmable completion (should be enabled by default)
+# Behavior
+shopt -s checkhash               # Build hash of commands in PATH, look there first, in PATH after
+shopt -s checkwinsize            # Automatically update the values of LINES and COLUMNS
+shopt -s no_empty_cmd_completion # Don't look in PATH if I haven't typed anything
+shopt -s progcomp                # Programmable completion (should be enabled by default)
 
-# Always us vi.
+# Always us vi
 export editor=vi
 
 # Use vim keybindings
@@ -93,13 +83,13 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced    # Easier to see on dark screen
 
 # Colorize man output with less
-export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
-export LESS_TERMCAP_md=$'\e[01;38;5;74m'  # begin bold
-export LESS_TERMCAP_me=$'\e[0m'           # end mode
-export LESS_TERMCAP_se=$'\e[0m'           # end standout-mode
-export LESS_TERMCAP_so=$'\e[38;5;246m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\e[0m'           # end underline
-export LESS_TERMCAP_us=$'\e[04;38;5;146m' # begin underline
+export LESS_TERMCAP_mb=$'\e[01;31m'       # Begin blinking
+export LESS_TERMCAP_md=$'\e[01;38;5;74m'  # Begin bold
+export LESS_TERMCAP_me=$'\e[0m'           # End mode
+export LESS_TERMCAP_se=$'\e[0m'           # End standout-mode
+export LESS_TERMCAP_so=$'\e[38;5;246m'    # Begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\e[0m'           # End underline
+export LESS_TERMCAP_us=$'\e[04;38;5;146m' # Begin underline
 
 # ---------------------------------
 # Color chart is below
