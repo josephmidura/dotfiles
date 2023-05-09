@@ -1,5 +1,12 @@
-# Last update 11-25-22
+# Last update 05-09-23
 # Do I need bash_aliases.local?
+
+## MySQL
+alias mysql='/usr/local/mysql/bin/mysql'
+alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+
+# SSH
+alias ssh='sshcolor.sh'
 
 # Must be invoked as super user
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
