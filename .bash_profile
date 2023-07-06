@@ -1,8 +1,8 @@
-# Last update 02/02/23
+# Last update 07/06/23
 
 # Reminder - AWS default profile is defined here
 
-echo Hello from .bash_profile
+#echo Hello from .bash_profile
 
 # Source the .bashrc, if it exists
 if [ -f ~/.bashrc ]; then
@@ -36,3 +36,5 @@ export PATH="$HOME/bin:$PATH"
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
+
+source /Users/ifpt192/.docker/init-bash.sh || true # Added by Docker Desktop
