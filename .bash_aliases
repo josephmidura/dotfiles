@@ -1,7 +1,15 @@
-# Last update 05-09-23
-# Do I need bash_aliases.local?
+# Last update 07-11-23
+# Do I need bash_aliases.local? -- for navigation shortcuts
 
-## MySQL
+# ---------------------------------
+# Misc
+# ---------------------------------
+alias switch='export AWS_PROFILE='
+alias bejs='bundle exec jekyll serve'
+alias h='heroku'                    # Less typing
+alias sql='sqlite3'                 # Abbreviate
+
+# MySQL
 alias mysql='/usr/local/mysql/bin/mysql'
 alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
@@ -10,13 +18,6 @@ alias ssh='sshcolor.sh'
 
 # Must be invoked as super user
 alias temp='sudo powermetrics --samplers smc | grep -i "CPU die temperature"'
-
-# ---------------------------------
-# Some random aliases
-# ---------------------------------
-alias bejs='bundle exec jekyll serve'
-alias h='heroku'                    # Less typing
-alias sql='sqlite3'                 # Abbreviate
 
 # ---------------------------------
 # Docker aliases
