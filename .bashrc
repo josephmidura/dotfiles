@@ -1,4 +1,4 @@
-# Last update 03-13-23
+# Last update 07-11-23
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -91,6 +91,11 @@ export LESS_TERMCAP_so=$'\e[38;5;246m'    # Begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\e[0m'           # End underline
 export LESS_TERMCAP_us=$'\e[04;38;5;146m' # Begin underline
 
+# For use with virtualenvs
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="0" python -m pip "$@"
+}
+
 # ---------------------------------
 # Color chart is below
 # ---------------------------------
@@ -136,9 +141,3 @@ bakcyn='\e[46m'    # Cyan
 bakwht='\e[47m'    # White
  
 txtrst='\e[0m'     # Text Reset
-
-# ---------------------------------
-# This should be the last line of the file - for local customization
-# Don't make edits below this
-# ---------------------------------
-[ -f ".bashrc.local" ] && source ".bashrc.local"
