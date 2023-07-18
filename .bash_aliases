@@ -4,7 +4,6 @@
 # ---------------------------------
 # Misc
 # ---------------------------------
-alias switch='export AWS_PROFILE='
 alias bejs='bundle exec jekyll serve'
 alias h='heroku'                    # Less typing
 alias sql='sqlite3'                 # Abbreviate
