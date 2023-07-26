@@ -1,6 +1,4 @@
-# Last update 07/06/23
-
-# Reminder - AWS default profile is defined here
+# Last update 07/26/23
 
 #echo Hello from .bash_profile
 
@@ -16,10 +14,10 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH="$HOME/bin:$PATH"
 
 # For Asdf and Python
-#. /usr/local/opt/asdf/libexec/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
 
-# Use personal AWS account as default
-#export AWS_PROFILE=personal
+# Make me choose a profile each time
+export AWS_PROFILE=null
 
 # Set PATH for Git in homebrew
 #export PATH="usr/local/opt/git/bin:$PATH" 
