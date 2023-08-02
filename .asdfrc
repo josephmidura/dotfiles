@@ -4,5 +4,8 @@
 # Global defaults are managed in $HOME/.tool-versions
 #
 #
-#
 # See the docs for explanations: https://asdf-vm.com/manage/configuration.html
+#
+
+# Support existing version files from other version managers
+legacy_version_file = yes
