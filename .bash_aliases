@@ -1,4 +1,4 @@
-# Last update 07-11-23
+# Last update 08-18-23
 # Do I need bash_aliases.local? -- for navigation shortcuts
 
 # ---------------------------------
@@ -75,7 +75,7 @@ alias du='du -sh'                   # Human readable, no subdirectories
 # ---------------------------------
 alias cp='cp -i'                    # Ask for permission 
 alias mv='mv -i'                    # Ask for permission 
-alias sbash='source ~/.bashrc'      # Re-source this file
+alias sbash='source ~/.bash_profile'# Re-source this file
 alias svim='source ~/.vimrc'        # Source vimrc
 alias grep='grep --color'           # Colorize grep results
 alias his='history'                 # Duh
