@@ -31,7 +31,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$(parse_git_branch)$ " 
+PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]\$(parse_git_branch)$ " 
 
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
