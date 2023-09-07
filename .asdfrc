@@ -1,11 +1,25 @@
-# Last update 2.16.23
+# Last update 8.17.23
 # This file, combined with .tool-versions, configures asdf
 #
 # Global defaults are managed in $HOME/.tool-versions
 #
 #
 # See the docs for explanations: https://asdf-vm.com/manage/configuration.html
+
+#ASDF_CONFIG_FILE
+#Path to the .asdfrc configuration file. Can be set to any location. 
+#Must be an absolute path.
 #
+#If Unset: $HOME/.asdfrc will be used.
+#Usage: export ASDF_CONFIG_FILE=/home/john_doe/.config/asdf/.asdfrc#
 
 # Support existing version files from other version managers
 legacy_version_file = yes
+
+# The below file shows the required format with the default values:
+#legacy_version_file = no
+use_release_candidates = no
+always_keep_download = no
+plugin_repository_last_check_duration = 60
+disable_plugin_short_name_repository = no
+concurrency = auto
