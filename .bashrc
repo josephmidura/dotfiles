@@ -26,10 +26,19 @@ fi
 #PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
 
 # This is based on the links above in line 22
-source ~/.git-prompt.sh
+#source ~/.git-prompt.sh
 #PS1='\u \W$(__git_ps1)\$ ' # for testing
 
-PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(__git_ps1)\$ "
+#PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(__git_ps1)\$ "
+
+
+## Ugly but it works
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
+
 
 
 # Enable 256 color support in gruvbox
