@@ -96,10 +96,13 @@ export CC=gcc
 # Set terminal colors
 # ---------------------------------
 
+# https://stackoverflow.com/questions/1550288/os-x-terminal-colors
+
 # This is equivalent to ls -G. See man ls for details because I alias this also
+# Enable coloring in terminal
 export CLICOLOR=1
 
-# Terminal colors 
+# Specify how to color specific items
 #export LSCOLORS=ExFxBxDxCxegedabagacad   #
 export LSCOLORS=GxFxCxDxBxegedabagaced    # Easier to see on dark screen
 
