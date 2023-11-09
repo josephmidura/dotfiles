@@ -2,7 +2,7 @@
 " Make vim work better.                                               '
 " Formatted for 80 character terminal - end line at 71 or 72          '
 "                                                                     '
-" Last update 08/23/23                                                '
+" Last update 11/09/23                                                '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -40,7 +40,7 @@ set ignorecase          " Make search case insensitive
 set smartcase           " Make search case sensitive if capital present
 
 " Make it look nice
-set colorcolumn  =72,90 " Warn me when I'm near the end of the window
+set colorcolumn  =72,90 " Warn with a vertical line about window edge
 set scrolloff    =3     " Keep cursor X lines away from top/bottom
 set cmdheight    =2     " Make the command line X lines high
 set laststatus   =2     " Enable the status line always
@@ -48,8 +48,8 @@ set laststatus   =2     " Enable the status line always
 "set nowrap             " Text doesn't wrap by default
 
 " Set the window size
-set lines        =30    " Set height
-set columns      =100   " Set width
+"set lines        =30    " Set height (will auto resize window)
+"set columns      =100   " Set width (will auto resize window)
 set numberwidth  =4     " Add X spaces by number line
 
 " Setup tabs
