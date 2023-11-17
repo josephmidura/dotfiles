@@ -2,7 +2,7 @@
 " Make vim work better.                                               '
 " Formatted for 80 character terminal - end line at 71 or 72          '
 "                                                                     '
-" Last update 11/09/23                                                '
+" Last update 11/16/23                                                '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -39,17 +39,21 @@ set incsearch           " Search as characters are entered
 set ignorecase          " Make search case insensitive
 set smartcase           " Make search case sensitive if capital present
 
-" Make it look nice
+" Set up window size
 set colorcolumn  =72,90 " Warn with a vertical line about window edge
-set scrolloff    =3     " Keep cursor X lines away from top/bottom
 set cmdheight    =2     " Make the command line X lines high
 set laststatus   =2     " Enable the status line always
 "set showmatch          " Briefly jump to matching brace on inserted
-"set nowrap             " Text doesn't wrap by default
+
+" Make text formatting nicer
+set nowrap              " Text doesn't wrap by default
+set textwidth    =80    " Wrap text for an 80 column terminal (or 96)
+set autoindent          " Autoindent on
+set fileformat   =unix  " Store in unix format to avoid conversion issues
 
 " Set the window size
-"set lines        =30    " Set height (will auto resize window)
-"set columns      =100   " Set width (will auto resize window)
+"set lines        =30   " Set height (will auto resize window)
+"set columns      =100  " Set width (will auto resize window)
 set numberwidth  =4     " Add X spaces by number line
 
 " Setup tabs
@@ -75,11 +79,6 @@ autocmd BufReadPost *
     \ if line("'\"") >1 && line("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
-
-" Make python nicer
-set textwidth    =96    " Wrap text for an 80 column terminal (or 96)
-set autoindent          " Autoindent on
-set fileformat   =unix  " Store in unix format to avoid conversion issues
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set viminfo file                                                    '
