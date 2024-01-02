@@ -2,7 +2,7 @@
 " Make vim work better.                                               '
 " Formatted for 80 character terminal - end line at 71 or 72          '
 "                                                                     '
-" Last update 11/16/23                                                '
+" Last update 01/02/24                                                '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -17,8 +17,8 @@ set nocompatible        " Use vim rather than vi settings
 "    set termguicolors
 "endif
 
-" A few basic settings
-colorscheme elflord     " Colorscheme fallback if nothing else installed
+" Minimal preferred settings
+colorscheme elflord     " Fallback if no other colorscheme installed 
 set background   =dark  " Use dark background
 set t_Co         =256   " Enable 256 colors
 " Apparently filetype needs to be off for some plugins
@@ -33,30 +33,30 @@ set visualbell          " No sounds
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
-" Improve Searching
+" Searching
 set hlsearch            " Highlight the search term
 set incsearch           " Search as characters are entered
 set ignorecase          " Make search case insensitive
 set smartcase           " Make search case sensitive if capital present
 
-" Set up window size
+" Window options
 set colorcolumn  =72,90 " Warn with a vertical line about window edge
 set cmdheight    =2     " Make the command line X lines high
 set laststatus   =2     " Enable the status line always
 "set showmatch          " Briefly jump to matching brace on inserted
 
-" Make text formatting nicer
-set nowrap              " Text doesn't wrap by default
+" Text formatting and wrapping
+"set nowrap              " Text doesn't wrap by default. 
 set textwidth    =80    " Wrap text for an 80 column terminal (or 96)
 set autoindent          " Autoindent on
 set fileformat   =unix  " Store in unix format to avoid conversion issues
 
-" Set the window size
-"set lines        =30   " Set height (will auto resize window)
-"set columns      =100  " Set width (will auto resize window)
+" Window dimensions
+"set lines        =30    " Set height (will auto resize window)
+"set columns      =80    " Set width (will auto resize window)
 set numberwidth  =4     " Add X spaces by number line
 
-" Setup tabs
+" Tabs
 set shiftwidth   =4     " Make the following tab stop every X places
 set tabstop      =4     " Use X spaces for tab
 set softtabstop  =4     " Make one backspace go back X places 
@@ -81,9 +81,8 @@ autocmd BufReadPost *
     \ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set viminfo file                                                    '
+" Viminfo file                                                        '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 set viminfo='500,f1,<1000,:100,h,%
 "            |   |  |     |    | |
 "            |   |  |     |    | |
@@ -125,6 +124,8 @@ Plug 'gruvbox-community/gruvbox'
 
 " Initialize plugin system - plugins become visible after this call
 call plug#end()
+
+let g:gruvbox_legacy_language_groups = 1                                    
 
 " Uncomment if vim plug colorscheme installed
 colorscheme gruvbox    " Line in bashrc supports gruvbox colors
