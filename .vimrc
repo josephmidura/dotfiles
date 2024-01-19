@@ -2,7 +2,7 @@
 " Make vim work better.                                               '
 " Formatted for 80 character terminal - end line at 71 or 72          '
 "                                                                     '
-" Last update 01/02/24                                                '
+" Last update 01/19/24                                                '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -53,7 +53,7 @@ set fileformat   =unix  " Store in unix format to avoid conversion issues
 
 " Window dimensions
 "set lines        =30    " Set height (will auto resize window)
-"set columns      =80    " Set width (will auto resize window)
+set columns      =90    " Set width (will auto resize window)
 set numberwidth  =4     " Add X spaces by number line
 
 " Tabs
