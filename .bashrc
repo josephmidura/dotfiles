@@ -31,6 +31,12 @@ fi
 
 #PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(__git_ps1)\$ "
 
+# Add date to prompt https://askubuntu.com/questions/193416/adding-timestamps-to-terminal-prompts
+export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d_%H:%M:%S)\]\ "
+
+#better date
+#PS1="\D{%F} \t"
+
 
 ## Ugly but it works
 parse_git_branch() {
@@ -38,8 +44,6 @@ parse_git_branch() {
 }
 
 PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
-
-
 
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
