@@ -1,4 +1,4 @@
-# Last update 12-07-23
+# Last update 02-23-24
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -7,7 +7,7 @@
 #echo Hello from .bashrc
 
 # Play a message when I re-source this file.
-echo -e Welcome to Bash ${BASH_VERSION%.*}.
+echo -e Welcome to Bash ${BASH_VERSION%.*}, $USER
 
 # List some mac specs
 #sw_vers
@@ -32,9 +32,6 @@ fi
 #PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(__git_ps1)\$ "
 
 # Add date to prompt https://askubuntu.com/questions/193416/adding-timestamps-to-terminal-prompts
-export PROMPT_COMMAND="echo -n \[\$(date +%Y-%m-%d_%H:%M:%S)\]\ "
-
-#better date
 #PS1="\D{%F} \t"
 
 
@@ -43,7 +40,8 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
+#PS1="[date time] user @ host : directory (git branch) $ "
+PS1="\n\D{[%F} \t] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
 
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
