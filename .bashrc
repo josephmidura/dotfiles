@@ -1,6 +1,6 @@
 # Last update 02-26-24
 
-# Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
+# Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
 
 # Determine whether this is the login script
@@ -8,9 +8,6 @@
 
 # Play a message when I re-source this file.
 echo -e Welcome to Bash ${BASH_VERSION%.*}, $USER
-
-# List some mac specs
-#sw_vers
 
 # Source the aliases file, if it exists
 if [ -f ~/.bash_aliases ]; then
@@ -44,25 +41,24 @@ parse_git_branch() {
 #PS1="[date time] user @ host : directory (git branch) $ "
 PS1="\n\D{[%F} \t] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
 
-# Enable 256 color support in gruvbox
-source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
-
 #----------------------------------
+# MISC
+#----------------------------------
+
 # Enable nvm
-#----------------------------------
-
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-#----------------------------------
-# HISTORY RELATED
-#----------------------------------
+# Turn off Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
 
-HISTFILESIZE=5000                        # Set number of lines in bash_history
-#export HISTCONTROL=ignoreboth:erasedups # Remove duplicate history entries (Sometimes I want the duplicates)
-shopt -s histappend                      # When the shell exits, append to the history file instead of overwriting it
-shopt -s histverify                      # Allow edits to history substitution
-export HISTTIMEFORMAT='%F %T '           # Set date and time in history
+# For use with virtualenvs
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="0" python -m pip "$@"
+}
+
+# List some mac specs
+#sw_vers
 
 #----------------------------------
 # SHELL
@@ -74,6 +70,13 @@ shopt -s checkwinsize                    # Automatically update the values of LI
 shopt -s no_empty_cmd_completion         # Don't look in PATH if I haven't typed anything
 shopt -s progcomp                        # Programmable completion (should be enabled by default)
 
+# History related
+HISTFILESIZE=5000                        # Set number of lines in bash_history
+#export HISTCONTROL=ignoreboth:erasedups # Remove duplicate history entries (Sometimes I want the duplicates)
+shopt -s histappend                      # When the shell exits, append to the history file instead of overwriting it
+shopt -s histverify                      # Allow edits to history substitution
+export HISTTIMEFORMAT='%F %T '           # Set date and time in history
+
 #----------------------------------
 # VARIABLES
 #----------------------------------
@@ -81,10 +84,6 @@ shopt -s progcomp                        # Programmable completion (should be en
 export EDITOR=vi
 
 set -o vi # Use vim keybindings
-
-
-# Turn off Homebrew analytics
-export HOMEBREW_NO_ANALYTICS=1
 
 # Replace Clang with gcc to avoid problems with Go
 #export CC=gcc
@@ -94,11 +93,13 @@ export CC=$(which gcc)
 # TERMINAL COLORS 
 #----------------------------------
 
+# Enable 256 color support in gruvbox
+source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
+
 # https://stackoverflow.com/questions/1550288/os-x-terminal-colors
 
 # This is equivalent to ls -G. See man ls for details because I alias this also
-# Enable coloring in terminal
-export CLICOLOR=1
+export CLICOLOR=1 # Enable coloring in terminal
 
 # Specify how to color specific items
 #export LSCOLORS=ExFxBxDxCxegedabagacad   #
@@ -112,11 +113,6 @@ export LESS_TERMCAP_se=$'\e[0m'           # End standout-mode
 export LESS_TERMCAP_so=$'\e[38;5;246m'    # Begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\e[0m'           # End underline
 export LESS_TERMCAP_us=$'\e[04;38;5;146m' # Begin underline
-
-# For use with virtualenvs
-gpip(){
-   PIP_REQUIRE_VIRTUALENV="0" python -m pip "$@"
-}
 
 #----------------------------------
 # Color chart is below
