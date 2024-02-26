@@ -1,4 +1,4 @@
-# Last update 02-23-24
+# Last update 02-26-24
 
 # Issue - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -17,8 +17,10 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-
-# Prompt
+#----------------------------------
+# PROMPT RELATED
+#----------------------------------
+#
 #https://stackoverflow.com/questions/15883416/adding-git-branch-on-the-bash-command-prompt
 #https://web.archive.org/web/20160704140739/http://ithaca.arpinum.org/2013/01/02/git-prompt.html
 
@@ -34,7 +36,6 @@ fi
 # Add date to prompt https://askubuntu.com/questions/193416/adding-timestamps-to-terminal-prompts
 #PS1="\D{%F} \t"
 
-
 ## Ugly but it works
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -46,46 +47,41 @@ PS1="\n\D{[%F} \t] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33
 # Enable 256 color support in gruvbox
 source "$HOME/.vim/plugged/gruvbox/gruvbox_256palette_osx.sh"
 
-# ---------------------------------
+#----------------------------------
 # Enable nvm
-# ---------------------------------
+#----------------------------------
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# ---------------------------------
-# Set history settings
-# ---------------------------------
+#----------------------------------
+# HISTORY RELATED
+#----------------------------------
 
-# Set number of files in bash_history
-HISTFILESIZE=5000
+HISTFILESIZE=5000                        # Set number of lines in bash_history
+#export HISTCONTROL=ignoreboth:erasedups # Remove duplicate history entries (Sometimes I want the duplicates)
+shopt -s histappend                      # When the shell exits, append to the history file instead of overwriting it
+shopt -s histverify                      # Allow edits to history substitution
+export HISTTIMEFORMAT='%F %T '           # Set date and time in history
 
-# Remove duplicate history entries (Sometimes I want the duplicates)
-#export HISTCONTROL=ignoreboth:erasedups
-
-# When the shell exits, append to the history file instead of overwriting it
-shopt -s histappend
-
-shopt -s histverify # Allow edits to history substitution
-
-# Set date and time in history
-export HISTTIMEFORMAT='%F %T '
-
-# ---------------------------------
-# Shell
-# ---------------------------------
+#----------------------------------
+# SHELL
+#----------------------------------
 
 # Behavior
-shopt -s checkhash               # Build hash of commands in PATH, look there first, in PATH after
-shopt -s checkwinsize            # Automatically update the values of LINES and COLUMNS
-shopt -s no_empty_cmd_completion # Don't look in PATH if I haven't typed anything
-shopt -s progcomp                # Programmable completion (should be enabled by default)
+shopt -s checkhash                       # Build hash of commands in PATH, look there first, in PATH after
+shopt -s checkwinsize                    # Automatically update the values of LINES and COLUMNS
+shopt -s no_empty_cmd_completion         # Don't look in PATH if I haven't typed anything
+shopt -s progcomp                        # Programmable completion (should be enabled by default)
 
-# Always us vi
-export editor=vi
+#----------------------------------
+# VARIABLES
+#----------------------------------
 
-# Use vim keybindings
-set -o vi
+export EDITOR=vi
+
+set -o vi # Use vim keybindings
+
 
 # Turn off Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
@@ -94,9 +90,9 @@ export HOMEBREW_NO_ANALYTICS=1
 #export CC=gcc
 export CC=$(which gcc)
 
-# ---------------------------------
-# Set terminal colors
-# ---------------------------------
+#----------------------------------
+# TERMINAL COLORS 
+#----------------------------------
 
 # https://stackoverflow.com/questions/1550288/os-x-terminal-colors
 
@@ -122,9 +118,9 @@ gpip(){
    PIP_REQUIRE_VIRTUALENV="0" python -m pip "$@"
 }
 
-# ---------------------------------
+#----------------------------------
 # Color chart is below
-# ---------------------------------
+#----------------------------------
 
 # Regular Colors
 txtblk='\e[0;30m]' # Black
