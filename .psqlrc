@@ -1,5 +1,7 @@
 -----------------------------------
--- last update 01/05/21
+-- last update 02.26.24
+--
+-- Helpful resource: https://blog.jpalardy.com/posts/psql-tips-and-tricks/
 -----------------------------------
 
 --\pset is for changing the output format (null,
@@ -9,7 +11,7 @@
 -------- Settings I like  ---------
 -----------------------------------
 
--- keep startup quiet
+-- Quiet startup 
 \set QUIET 1
 
 -- Print date on startup
@@ -19,10 +21,10 @@
 -- Timing on
 \timing
 
--- Color prompts are more fun
+-- Color prompt
 \set PROMPT1 '%[%033[1;33;40m%]%n@%/%R%[%033[0m%]%# '
 
--- Need a secondary and tertiary prompt
+-- Secondary and tertiary prompt
 \set PROMPT2 '... >'
 
 \set HISTFILE ~/.psql_history- :DBNAME
@@ -34,11 +36,11 @@
 -- Keep a history of the last 2000 commands.
 \set HISTSIZE 2000
 
--- Instead of displaying nulls as blank space, nulls as [NULL].
--- distinguish nulls from empty strings
+-- Instead of displaying nulls as blank space, display nulls as [NULL]
+-- to distinguish nulls from empty strings
 \pset null '[NULL]'
 
--- Turn this feature on
+-- Turn pager on
 \pset pager always
 
 -- Show lines around the outside of select results
@@ -51,4 +53,3 @@
 \set COMP_KEYWORD_CASE upper
 
 \unset QUIET 
-
