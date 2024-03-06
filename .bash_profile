@@ -38,5 +38,3 @@ export GPG_TTY=$(tty)
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
 
-source /Users/ifpt192/.docker/init-bash.sh || true # Added by Docker Desktop
-
