@@ -1,4 +1,4 @@
-# Last update 07/26/23
+# Last update 03/06/24
 
 #echo Hello from .bash_profile
 
@@ -31,8 +31,12 @@ export AWS_PROFILE=null
 # Set GO PATH
 #export PATH=$GOPATH/bin:$PATH
 
+# Set environment variable for GPG
+export GPG_TTY=$(tty)
+
 # This should be the last line of the file - for local customization
 # Don't make edits below this
 [ -f ".bash_profile.local" ] && source ".bash_profile.local"
 
 source /Users/ifpt192/.docker/init-bash.sh || true # Added by Docker Desktop
+
