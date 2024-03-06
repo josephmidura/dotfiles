@@ -1,5 +1,6 @@
 # Last update 03/06/24
 # Will I ever use the local customization option?
+# This file needs some general cleanup
 
 #echo Hello from .bash_profile
 
