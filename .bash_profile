@@ -1,4 +1,5 @@
 # Last update 03/06/24
+# Will I ever use the local customization option?
 
 #echo Hello from .bash_profile
 
