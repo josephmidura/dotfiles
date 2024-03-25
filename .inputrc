@@ -1,11 +1,11 @@
-# last update 8/15/21
+# last update 03/25/24
 
 # https://tiswww.case.edu/php/chet/readline/rltop.html
 
 # http://osxdaily.com/2013/04/24/improve-command-line-history-search/
 
 # Use vim emulator for programs that use GNU Readline 
-# Set editing-mode vi 
+set editing-mode vi 
 
 #"\e[A": history-search-backward
 #"\e[B": history-search-forward
@@ -33,3 +33,5 @@
 #set output-meta on
 #set show-all-if-ambiguous on
 #set visible-stats on
+
+"\C-f": unix-filename-rubout
