@@ -1,10 +1,10 @@
-# Last update 03-01-24
+# Last update 04-04-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
 
 # Determine whether this is the login script
-#echo Hello from .bashrc
+# echo Hello from .bashrc
 
 # Play a message when I re-source this file.
 echo -e Welcome to Bash ${BASH_VERSION%.*}, $USER
@@ -18,20 +18,18 @@ fi
 # PROMPT RELATED
 #----------------------------------
 #
-#https://stackoverflow.com/questions/15883416/adding-git-branch-on-the-bash-command-prompt
-#https://web.archive.org/web/20160704140739/http://ithaca.arpinum.org/2013/01/02/git-prompt.html
-
-#Original prompt (I've since modded it, but the form is right"
-#PS1="\n\[\033[36m\]\u\[\033[m\]@\[\033[34m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ " 
+# Add output of command to prompt: 
+# https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/
+#
+# https://stackoverflow.com/questions/15883416/adding-git-branch-on-the-bash-command-prompt
+# https://web.archive.org/web/20160704140739/http://ithaca.arpinum.org/2013/01/02/git-prompt.html
 
 # This is based on the links above in line 22
-#source ~/.git-prompt.sh
-#PS1='\u \W$(__git_ps1)\$ ' # for testing
+# source ~/.git-prompt.sh
+# PS1='\u \W$(__git_ps1)\$ ' # for testing
 
-#PS1="\n\[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(__git_ps1)\$ "
-
-# Add date to prompt https://askubuntu.com/questions/193416/adding-timestamps-to-terminal-prompts
-#PS1="\D{%F} \t"
+# Add date to prompt:
+# https://askubuntu.com/questions/193416/adding-timestamps-to-terminal-prompts
 
 ## Ugly but it works
 parse_git_branch() {
@@ -39,7 +37,6 @@ parse_git_branch() {
 }
 
 #PS1="[date time] user @ host : directory (git branch) $ "
-#PS1="\n\D{[%F} \t] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
 PS1="\n\[\033[34m\]\D{[%F} \A] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
 
 #----------------------------------
