@@ -1,4 +1,4 @@
-# Last update 04-04-24
+# Last update 04-05-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -37,7 +37,7 @@ parse_git_branch() {
 }
 
 #PS1="[date time] user @ host : directory (git branch) $ "
-PS1="\n\[\033[34m\]\D{[%F} \A] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\W\[\033[m\]$(parse_git_branch)$ "
+PS1="\n\[\033[34m\]\D{[%F} \A] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m\]:\[\033[33;1m\]\w\[\033[m\]$(parse_git_branch)$ "
 
 #----------------------------------
 # MISC
