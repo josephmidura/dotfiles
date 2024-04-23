@@ -1,4 +1,4 @@
-# Last update 04-05-24
+# Last update 04-23-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -47,8 +47,9 @@ PS1="\n\[\033[34m\]\D{[%F} \A] \[\033[36m\]\u\[\033[0m\]@\[\033[34m\]\h\[\033[0m
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Turn off Homebrew analytics
-export HOMEBREW_NO_ANALYTICS=1
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1       # Turn off Homebrew analytics
+export HOMEBREW_NO_INSTALL_CLEANUP=1 # Don't auto cleanup
 
 # For use with virtualenvs
 gpip(){
