@@ -1,4 +1,4 @@
-# Last update 04-23-24
+# Last update 04-29-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -50,6 +50,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Homebrew
 export HOMEBREW_NO_ANALYTICS=1       # Turn off Homebrew analytics
 export HOMEBREW_NO_INSTALL_CLEANUP=1 # Don't auto cleanup
+export HOMEBREW_NO_AUT0_UPDATE=1     # Don't auto update
 
 # For use with virtualenvs
 gpip(){
