@@ -1,4 +1,4 @@
-# Last update 08-18-23
+# Last update 05-16-24
 # Do I need bash_aliases.local? -- for navigation shortcuts
 
 # ---------------------------------
@@ -35,7 +35,7 @@ alias nq='networkQuality'            # Network Quality tool in Monterey
 # ---------------------------------
 alias gitc='git commit -s -m'        # Sign and message for commits
 alias gita='git add -p'              # Always use this flag 
-alias gb='git branch'
+alias gb='git branch -v'
 alias gs='git status'
 
 # ---------------------------------
@@ -43,10 +43,11 @@ alias gs='git status'
 # ---------------------------------
 alias v='vim'                        # Always use vim
 alias vi='vim'                       # Always use vim
-alias vvim='vim ~/.vimrc'            # Open vimrc
-alias vbash='vim ~/.bashrc'          # Open bashrc 
-alias vprof='vim ~/.bash_profile'    # Open bash profile 
-alias valias='vim ~/.bash_aliases'   # Open bash aliases
+alias vvim='vim ~/.vimrc'            # Open .vimrc
+alias vbash='vim ~/.bashrc'          # Open .bashrc 
+alias vprof='vim ~/.bash_profile'    # Open .bash_profile 
+alias valias='vim ~/.bash_aliases'   # Open .bash_aliases
+alias vgit='vim ~/.gitconfig'        # Open .gitconfig
 
 # ---------------------------------
 # Python aliases
