@@ -1,0 +1,15 @@
+[color]
+	ui = true
+#[diff]
+#j    external = git_diff_wrapper.sh
+#[pager]
+#    diff =
+[commit]
+    gpgsign = true
+[alias]
+    bdate = branch -v --format='%(committerdate:short) %(refname:short)'
+[color "status"]
+	untracked = magenta
+    header = brightwhite # Seems to be what gruvbox uses
+[include]
+	path = /Users/ifpt192/.gitlocal
