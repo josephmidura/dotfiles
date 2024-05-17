@@ -1,4 +1,4 @@
-# Last update 05-16-24
+# Last update 05-17-24
 # Do I need bash_aliases.local? -- for navigation shortcuts
 
 # ---------------------------------
@@ -63,6 +63,7 @@ alias la='ls -At'                    # Show all, date, symbol, readable
 alias lx='ls -x'                     # Sort by extension type 
 alias ll='ls -l -a'                  # Long list 
 alias lt='ls -l -t'                  # Long list sorted by date
+alias recent='ls -ltar | tail -10'   # What I've recently worked on
 alias c='clear'
 alias ..='cd ..'                     # Up one directory
 alias ...='cd ../..'                 # Up two 
@@ -80,6 +81,7 @@ alias sbash='source ~/.bash_profile' # Re-source this file
 alias svim='source ~/.vimrc'         # Source vimrc
 alias grep='grep --color'            # Colorize grep results
 alias his='history'                  # Duh
+alias last='history | tail -20'      #
 
 # ---------------------------------
 # Navigation shortcuts
