@@ -35,7 +35,7 @@ alias nq='networkQuality'            # Network Quality tool in Monterey
 # ---------------------------------
 alias gitc='git commit -s -m'        # Sign and message for commits
 alias gita='git add -p'              # Always use this flag 
-alias gb='git branch -va'
+alias gb='git branch -va'            # Also include remote branches
 alias gs='git status'
 
 # ---------------------------------
@@ -71,6 +71,7 @@ alias cd~='cd ~'                     # Fix a common error
 alias rm='rm -i'                     # Ask for permission 
 alias x='exit'                       # Exit 
 alias du='du -sh'                    # Human readable, no subdirectories
+alias mkdir='mkdir -v'               # Verbose
 
 # ---------------------------------
 # Moving and finding
