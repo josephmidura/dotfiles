@@ -148,3 +148,13 @@ export LESS_TERMCAP_so=$'\e[38;5;246m'    # Begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\e[0m'           # End underline
 export LESS_TERMCAP_us=$'\e[04;38;5;146m' # Begin underline
 
+#----------------------------------
+# FUNCTIONS
+#----------------------------------
+
+function _exit()                          # Run when shell exits
+{
+    echo -e "Adios, Au Revoir, Auf Wiedersehn"
+}
+trap _exit EXIT
+
