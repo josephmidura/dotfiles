@@ -1,4 +1,4 @@
-# Last update 05-18-24
+# Last update 05-20-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -60,7 +60,7 @@ txtrst='\e[0m'     # Text Reset
 #----------------------------------
 
 # Login message
-echo -e Welcome to Bash ${BASH_VERSION%.*}, $USER
+echo -e Welcome to Bash ${txtcyn}${BASH_VERSION%.*}${txtrst}, $USER
 
 #----------------------------------
 # PROMPT RELATED
