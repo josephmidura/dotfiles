@@ -73,7 +73,7 @@ parse_git_branch() {
 
 #PS1="[date time] user @ host : directory (git branch) $ "
 
-PS1="\n${txtblu}\D{[%F} \A] ${txtcyn}\u${txtrst}@${txtblu}\h${txtrst}:${bldylw}\w${txtcyn}\$(parse_git_branch)${txtrst}$ "
+PS1="\n${txtblu}\D{[%F} \A] ${txtcyn}\u${txtrst}@${txtblu}\h${txtrst}:${bldylw}[\w]${txtcyn}\$(parse_git_branch)${txtrst}$ "
 
 #----------------------------------
 # MISC
