@@ -1,10 +1,16 @@
-# Last update 05-20-24
+# Last update 05-21-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
 
 # Determine whether this is the login script
 # echo Hello from .bashrc
+
+# Source /etc/bashrc if it exists.
+if [ -f /etc/bashrc ]; then
+      . /etc/bashrc  
+fi
+
 
 # Source the aliases file, if it exists
 if [ -f ~/.bash_aliases ]; then
@@ -73,8 +79,7 @@ parse_git_branch() {
 
 #PS1="[date time] user @ host : directory (git branch) $ "
 
-PS1="\n${txtblu}\D{[%F} \A] ${txtcyn}\u${txtrst}@${txtblu}\h${txtrst}:${bldylw}[\w]${txtcyn}\$(parse_git_branch)${txtrst}$ "
-
+PS1="\n\[${txtblu}\]\D{[%F} \A] \[${txtcyn}\]\u\[${txtrst}\]@\[${txtblu}\]\h\[${txtrst}\]:\[${bldylw}\][\w]\[${txtcyn}\]\$(parse_git_branch)\[${txtrst}\]$ "
 #----------------------------------
 # MISC
 #----------------------------------
