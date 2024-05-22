@@ -1,4 +1,4 @@
-# Last update 05-17-24
+# Last update 05-22-24
 # Do I need bash_aliases.local? -- for navigation shortcuts
 
 # ---------------------------------
@@ -69,7 +69,6 @@ alias ..='cd ..'                     # Up one directory
 alias ...='cd ../..'                 # Up two 
 alias cd~='cd ~'                     # Fix a common error
 alias rm='rm -i'                     # Ask for permission 
-alias x='exit'                       # Exit 
 alias du='du -sh'                    # Human readable, no subdirectories
 alias mkdir='mkdir -v'               # Verbose
 
