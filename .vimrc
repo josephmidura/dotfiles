@@ -121,6 +121,8 @@ Plug 'gruvbox-community/gruvbox'
 "Plug 'leafgarland/typescript-vim'
 "Plug 'turbio/bracey.vim'
 "Plug 'sheerun/vim-polyglot' " Syntax highlighting - will mess with gruvbox
+"Plug 'jvirtanen/vim-hcl' " doesn't seem to work
+Plug 'vim-terraform' " deprecated, but works, sort of
 
 " Initialize plugin system - plugins become visible after this call
 call plug#end()
