@@ -8,8 +8,9 @@
     gpgsign = true
 [alias]
     bdate = branch -v --format='%(committerdate:short) %(refname:short)'
+    hisfancy = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 [color "status"]
 	untracked = magenta
     header = brightwhite # Seems to be what gruvbox uses
 [include]
-	path = /Users/ifpt192/.gitlocal
+    path = /Users/ifpt192/.gitlocal
