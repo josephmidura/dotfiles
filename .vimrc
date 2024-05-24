@@ -2,7 +2,7 @@
 " Make vim work better.                                               '
 " Formatted for 80 character terminal - end line at 71 or 72          '
 "                                                                     '
-" Last update 05/22/24                                                '
+" Last update 05/24/24                                                '
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible        " Use vim rather than vi settings
@@ -122,12 +122,13 @@ Plug 'gruvbox-community/gruvbox'
 "Plug 'turbio/bracey.vim'
 "Plug 'sheerun/vim-polyglot' " Syntax highlighting - will mess with gruvbox
 "Plug 'jvirtanen/vim-hcl' " doesn't seem to work
-Plug 'vim-terraform' " deprecated, but works, sort of
+"Plug 'vim-terraform' " deprecated, but works, sort of
 
 " Initialize plugin system - plugins become visible after this call
 call plug#end()
 
-let g:gruvbox_legacy_language_groups = 1                                    
+"Doesn't allow legacy highlighting for .md files, but vim-polyglot works
+"let g:gruvbox_legacy_language_groups = 1   
 
 " Uncomment if vim plug colorscheme installed
 colorscheme gruvbox    " Line in bashrc supports gruvbox colors
