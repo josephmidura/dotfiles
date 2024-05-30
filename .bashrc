@@ -1,4 +1,4 @@
-# Last update 05-21-24
+# Last update 05-30-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -79,7 +79,7 @@ parse_git_branch() {
 
 #PS1="[date time] user @ host : directory (git branch) $ "
 
-PS1="\n\[${txtblu}\]\D{[%F} \A] \[${txtcyn}\]\u\[${txtrst}\]@\[${txtblu}\]\h\[${txtrst}\]:\[${bldylw}\][\w]\[${txtcyn}\]\$(parse_git_branch)\[${txtrst}\]$ "
+PS1="\n\[${txtylw}\][\w]\[${txtcyn}\]\$(parse_git_branch)\[${txtrst}\]\n\[${txtblu}\]\D{[%F} \A] \[${txtcyn}\]\u\[${txtrst}\]@\[${txtblu}\]\h\[${txtrst}\]:\[${txtcyn}\](\!)\[${txtrst}\]$ "
 #----------------------------------
 # MISC
 #----------------------------------
@@ -163,3 +163,11 @@ function _exit()                          # Run when shell exits
 }
 trap _exit EXIT
 
+#########3
+#exit() {
+    #read -t5 -n1 -p "Do you really wish to exit? [yN] " should_exit || should_exit=y
+    #case $should_exit in
+        #[Yy] ) builtin exit $1 ;;
+        #* ) printf "\n" ;;
+    #esac
+#}
