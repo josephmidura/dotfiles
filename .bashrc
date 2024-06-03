@@ -1,4 +1,4 @@
-# Last update 05-30-24
+# Last update 06-03-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -156,6 +156,10 @@ export LESS_TERMCAP_us=$'\e[04;38;5;146m' # Begin underline
 #----------------------------------
 # FUNCTIONS
 #----------------------------------
+function PATH()
+{
+    echo "$PATH" | tr : '\n'
+}
 
 function _exit()                          # Run when shell exits
 {
