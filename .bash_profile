@@ -1,6 +1,5 @@
 # Last update 06/03/24
 # Will I ever use the local customization option?
-# This file needs some general cleanup
 
 #echo Hello from .bash_profile
 
@@ -16,14 +15,11 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 PATH=$PATH:~/bin
 export PATH
 
-# For Asdf and Python
+# For asdf 
 . /usr/local/opt/asdf/libexec/asdf.sh
 
 # Make me choose a profile each time
 export AWS_PROFILE=null
-
-# Set PATH for Git in homebrew
-#export PATH="usr/local/opt/git/bin:$PATH" 
 
 # Run rbenv
 #eval "$(rbenv init -)"
