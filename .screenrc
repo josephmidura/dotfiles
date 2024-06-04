@@ -1,2 +1,4 @@
-# status line
+# Last update 5/24/24
+
+# Show status line
 hardstatus alwayslastline "%{=b}%{G}%w"

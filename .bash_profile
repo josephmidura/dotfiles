@@ -1,4 +1,4 @@
-# Last update 03/06/24
+# Last update 06/03/24
 # Will I ever use the local customization option?
 # This file needs some general cleanup
 
@@ -12,8 +12,9 @@ fi
 # Supress message about zsh when terminal launches
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Execute a shell script from any directory 
-export PATH="$HOME/bin:$PATH"
+# Set up my $PATH to include ~/bin
+PATH=$PATH:~/bin
+export PATH
 
 # For Asdf and Python
 . /usr/local/opt/asdf/libexec/asdf.sh
