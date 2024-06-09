@@ -87,6 +87,7 @@ alias last='history | tail -20'      #
 # Navigation shortcuts
 # ---------------------------------
 
+alias cdb='cd ~/bin'
 # I should put shortcuts in .bash_aliases.local
 
 # This should be the last line of the file - for local customization
