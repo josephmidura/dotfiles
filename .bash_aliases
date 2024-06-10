@@ -1,4 +1,4 @@
-# Last update 05-22-24
+# Last update 06-10-24
 # Do I need bash_aliases.local? -- for navigation shortcuts
 
 # ---------------------------------
@@ -81,7 +81,7 @@ alias sbash='source ~/.bash_profile' # Re-source this file
 alias svim='source ~/.vimrc'         # Source vimrc
 alias grep='grep --color'            # Colorize grep results
 alias his='history'                  # Duh
-alias last='history | tail -20'      #
+alias last20='history | tail -20'    #
 
 # ---------------------------------
 # Navigation shortcuts
