@@ -1,4 +1,4 @@
-# Last update 06/03/24
+# Last update 06/11/24
 # Will I ever use the local customization option?
 
 #echo Hello from .bash_profile
@@ -14,6 +14,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Set up my $PATH to include ~/bin
 PATH=$PATH:~/bin
 export PATH
+
+# Homebrew's sbin
+export PATH="/usr/local/sbin:$PATH"
 
 # For asdf 
 . /usr/local/opt/asdf/libexec/asdf.sh
