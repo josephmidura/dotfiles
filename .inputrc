@@ -1,4 +1,4 @@
-# last update 03/25/24
+# last update 06/12/24
 
 # https://tiswww.case.edu/php/chet/readline/rltop.html
 
@@ -34,4 +34,5 @@ set editing-mode vi
 #set show-all-if-ambiguous on
 #set visible-stats on
 
-"\C-f": unix-filename-rubout
+# Crtl-f for quick backspace
+"\C-f": unix-filename-rubout 
