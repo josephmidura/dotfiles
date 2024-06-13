@@ -1,4 +1,4 @@
-# Last update 06-03-24
+# Last update 06-13-24
 
 # Issues - Is the CLICOLOR line necessary since I have LSCOLORS define?
 # I also alias ls -G elsewhere
@@ -89,9 +89,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Homebrew
-export HOMEBREW_NO_ANALYTICS=1       # Turn off Homebrew analytics
-export HOMEBREW_NO_INSTALL_CLEANUP=1 # Don't auto cleanup
-export HOMEBREW_NO_AUT0_UPDATE=1     # Don't auto update
+export HOMEBREW_NO_ANALYTICS=1            # Turn off Homebrew analytics
+export HOMEBREW_NO_INSTALL_CLEANUP=1      # Don't auto cleanup
+export HOMEBREW_NO_AUT0_UPDATE=1          # Don't auto update
 
 # For use with virtualenvs
 gpip(){
@@ -106,17 +106,17 @@ gpip(){
 #----------------------------------
 
 # Behavior
-shopt -s checkhash                       # Build hash of commands in PATH, look there first, in PATH after
-shopt -s checkwinsize                    # Automatically update the values of LINES and COLUMNS
-shopt -s no_empty_cmd_completion         # Don't look in PATH if I haven't typed anything
-shopt -s progcomp                        # Programmable completion (should be enabled by default)
+shopt -s checkhash                        # Build hash of commands in PATH, look there first, in PATH after
+shopt -s checkwinsize                     # Automatically update the values of LINES and COLUMNS
+shopt -s no_empty_cmd_completion          # Don't look in PATH if I haven't typed anything
+shopt -s progcomp                         # Programmable completion (should be enabled by default)
 
 # History related
-HISTFILESIZE=5000                        # Set number of lines in bash_history
-#export HISTCONTROL=ignoreboth:erasedups # Remove duplicate history entries
-shopt -s histappend                      # When the shell exits, append to the history file instead of overwriting it
-shopt -s histverify                      # Allow edits to history substitution
-export HISTTIMEFORMAT='%F %T '           # Set date and time in history
+ HISTFILESIZE=5000                        # Set number of lines in bash_history
+#export HISTCONTROL= ignoreboth:erasedups # Remove duplicate history entries
+shopt -s histappend                       # When the shell exits, append to the history file instead of overwriting it
+shopt -s histverify                       # Allow edits to history substitution
+export HISTTIMEFORMAT='%F  %T '           # Set date and time in history
 
 #----------------------------------
 # VARIABLES
